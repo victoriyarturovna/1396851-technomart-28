@@ -9,7 +9,8 @@
 <header>
 	<div>
 		<a href="index.html">ТЕХНОМАРТ</a>
-		<span>Поиск:</span>
+		<form action="https://echo.htmlacademy.ru/courses" method="get">
+			<input type="search" name="search" placeholder="Поиск:">
 		<ul>
 			<li><a href="">Закладки:0</a></li>
 			<li><a href="">Корзина:10</a></li>
@@ -17,7 +18,7 @@
 		</ul>
 	</div>
 	<section>
-		<h1>Выбор перфораторов</h1>
+		<h1 class="visually-hidden">Выбор перфораторов</h1>
 		<p>
 		Интернет-маганзин строительных материалов и инструментов для ремонта
 		</p>
@@ -56,22 +57,50 @@
 			<p>Фильтр:</p>
 			<p>
 				Цена:
+				<input type="range" min="0" max="30000"/>
 				<span>0 - 30000</span>
 			</p>
-		<h2>Производители:</h2>
-			<ul>
-				<li>BOSCH</li>
-				<li>ИНТЕРСКОЛ</li>
-				<li>MAKITA</li>
-				<li>DEWALT</li>
-				<li>HITACHI</li>
-			</ul>
-		<h2>Питание:</h2>
-			<ul>
-				<li>Аккумуляторные</li>
-				<li>Сетевые</li>
-			</ul>
-		<button type="button">Показать</button>
+		<form action="https://echo.htmlacademy.ru/courses" method="get">
+			<fieldset>
+				<legend>Производители:</legend>
+				<ul>
+					<li>
+						<input type="checkbox" name="BOSCH" id="filter-BOSCH" checked>
+						<label for="filter-BOSCH">BOSCH</label>
+					</li>
+					<li>
+						<input type="checkbox" name="interscol" id="filter-interscol">
+						<label for="filter-interscol">ИНТЕРСКОЛ</label>
+					</li>
+					<li>
+						<input type="checkbox" name="MAKITA" id="filter-MAKITA" checked>
+						<label for="filter-MAKITA">MAKITA</label>
+					</li>
+					<li>
+						<input type="checkbox" name="DEWALT" id="filter-DEWALT">
+						<label for="filter-DEWALT">DEWALT</label>
+					</li>
+					<li>
+						<input type="checkbox" name="HITACHI" id="filter-HITACHI">
+						<label for="filter-HITACHI">HITACHI</label>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Питание:</legend>
+				<ul>
+					<li>
+						<input type="radio" name="power-group" value="battery" id="filter_battery" checked>
+						<label for="filter_battery">Аккумуляторные</label>
+					</li>
+					<li>
+						<input type="radio" name="power-group" value="network" id="filter_network">
+						<label for="filter_network">Сетевые</label>
+					</li>
+				</ul>
+			</fieldset>
+			<button type="submit">Показать</button>
+		</form>
 		</div>
 		<div>
 			<h2>Сортировка:</h2>
@@ -84,7 +113,7 @@
 			</ul>
 			<ul>
 				<li>
-					<img src="img/hummer_6000.png" width="100" height="100" alt="Перфоратор BOSCH BFG 6000">
+					<img src="img/hummer_6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
 					Перфоратор BOSCH BFG 6000
 					<span><del>30500 Р.</del></span> 
 					<span>25500 P.</span>
@@ -92,7 +121,7 @@
 					<button type="button">В закладки</button>
 				</li>
 				<li>
-					<img src="img/hummer_6000.png" width="100" height="100" alt="Перфоратор BOSCH BFG 6000">
+					<img src="img/hummer_6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
 					Перфоратор BOSCH BFG 6000
 					<span><del>30500 Р.</del></span> 
 					<span>25500 P.</span>
@@ -100,23 +129,23 @@
 					<button type="button">В закладки</button>
 				</li>
 				<li>
-					<img src="img/hummer_6000.png" width="100" height="100" alt="Перфоратор BOSCH BFG 6000">
-					Перфоратор BOSCH BFG 6000 <span>new</span>
+					<img src="img/hummer_6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+					Перфоратор BOSCH BFG 6000 <span>Новинка</span>
 					<span><del>30500 Р.</del></span> 
 					<span>25500 P.</span>
 					<button type="button">Купить</button>
 					<button type="button">В закладки</button>
 				</li>
 				<li>
-					<img src="img/hummer_2000_3000.png" width="100" height="100" alt="Перфоратор BOSCH BFG 3000">
-					Перфоратор BOSCH BFG 3000
+					<img src="img/hummer_2000_3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+					Перфоратор BOSCH BFG 3000 <span>Новинка</span>
 					<span><del>22500 Р.</del></span> 
 					<span>15500 P.</span>
 					<button type="button">Купить</button>
 					<button type="button">В закладки</button>
 				</li>
 				<li>
-					<img src="img/hummer_6000.png" width="100" height="100" alt="Перфоратор BOSCH BFG 6000">
+					<img src="img/hummer_6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
 					Перфоратор BOSCH BFG 6000
 					<span><del>30500 Р.</del></span> 
 					<span>25500 P.</span>
@@ -124,22 +153,22 @@
 					<button type="button">В закладки</button>
 				</li>
 				<li>
-					<img src="img/hummer_2000_3000.png" width="100" height="100" alt="Перфоратор BOSCH BFG 2000">
-					Перфоратор BOSCH BFG 2000 <span>new</span>
+					<img src="img/hummer_2000_3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+					Перфоратор BOSCH BFG 2000 <span>Новинка</span>
 					<span>25500 P.</span>
 					<button type="button">Купить</button>
 					<button type="button">В закладки</button>
 				</li>
 				<li>
-					<img src="img/hummer_2000_3000.png" width="100" height="100" alt="Перфоратор BOSCH BFG 3000">
-					Перфоратор BOSCH BFG 3000 
+					<img src="img/hummer_2000_3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+					Перфоратор BOSCH BFG 3000 <span>Новинка</span>
 					<span><del>22500 Р.</del></span> 
 					<span>15500 P.</span>
 					<button type="button">Купить</button>
 					<button type="button">В закладки</button>
 				</li>
 				<li>
-					<img src="img/hummer_6000.png" width="100" height="100" alt="Перфоратор BOSCH BFG 6000">
+					<img src="img/hummer_6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
 					Перфоратор BOSCH BFG 6000 
 					<span><del>30500 Р.</del></span> 
 					<span>25500 P.</span>
@@ -147,8 +176,8 @@
 					<button type="button">В закладки</button>
 				</li>
 				<li>
-					<img src="img/hummer_2000_3000.png" width="100" height="100" alt="Перфоратор BOSCH BFG 2000">
-					Перфоратор BOSCH BFG 2000 <span>new</span>
+					<img src="img/hummer_2000_3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+					Перфоратор BOSCH BFG 2000 <span>Новинка</span>
 					<span>25500 P.</span>
 					<button type="button">Купить</button>
 					<button type="button">В закладки</button>

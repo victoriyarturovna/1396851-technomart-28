@@ -9,7 +9,9 @@
 	<header>
 		<div>
 			<span>ТЕХНОМАРТ</span>
-			<span>Поиск:</span>
+			<form action="https://echo.htmlacademy.ru/courses" method="get">
+				<input type="search" name="search" placeholder="Поиск:"> 
+			</form>
 			<ul>
 				<li><a href="">Закладки:0</a></li>
 				<li><a href="">Корзина:0</a></li>
@@ -17,7 +19,7 @@
 			</ul>
 		</div>
 		<section>
-			<h1>Главная страница магазина Техномарт</h1>
+			<h1 class="visually-hidden">Главная страница магазина Техномарт</h1>
 			<p>
 				Интернет-маганзин строительных материалов и инструментов для ремонта
 			</p>
@@ -90,28 +92,28 @@
 			</div>
 			<ul>
 			<li> 
-				<img src="img/hummer_9000.png" width="150" height="150" alt="Перфоратор BOSCH BFG 9000">
+				<img src="img/hummer_9000.png" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
 				Перфоратор BOSCH BFG 9000
 				<span><del>32500 Р.</del></span> <span>25500 P.</span>
 				<button type="button">Купить</button>
 				<button type="button">В закладки</button>
 			</li>
 			<li>
-				<img src="img/hummer_2000_3000.png" width="100" height="100" alt="Перфоратор BOSCH BFG 3000">
+				<img src="img/hummer_2000_3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
 				Перфоратор BOSCH BFG 3000 <span>Новинка</span>
 				<span><del>22500 Р.</del></span> <span>15500 P.</span>
 				<button type="button">Купить</button>
 				<button type="button">В закладки</button>
 			</li>
 			<li> 
-				<img src="img/hummer_6000.png" width="100" height="100" alt="Перфоратор BOSCH BFG 6000">
+				<img src="img/hummer_6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
 				Перфоратор BOSCH BFG 6000
 				<span><del>30500 Р.</del></span> <span>25500 P.</span>
 				<button type="button">Купить</button>
 				<button type="button">В закладки</button>
 			</li>
 			<li> 
-				<img src="img/hummer_2000_3000.png" width="100" height="100" alt="Перфоратор BOSCH BFG 2000">
+				<img src="img/hummer_2000_3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
 				Перфоратор BOSCH BFG 2000 <span>Новинка</span>
 				<span>15500 P.</span>
 				<button type="button">Купить</button>
@@ -119,7 +121,7 @@
 			</li>
 			</ul>
 			<div>
-				<h3>Популярные производители:</h3>
+				<h2>Популярные производители:</h2>
 				<button type="button">Все производители</button>
 			</div>
 			<ul>
@@ -194,7 +196,10 @@
 					заехав в наш офис:
 				</p>
 				<a href="">Карта</a>
+				<img src="img/map.png" alt="Карта">
+				<img src="img/map_popup.png" alt="Расширенная карта">
 				<button type="button">Заблудились? Напишите нам!</button>
+				<button type="button">Закрыть карту</button>
 			</section>
 		</div>
 	</main>
@@ -235,21 +240,28 @@
 		</div>
 	</footer>
 
-<div>
+<form action="https://echo.htmlacademy.ru/courses" method="post">
 	<p>
+	<label>
 		Ваше имя: 
-		<span>Имя Фамилия</span>
+		<input type="text" name="username" placeholder="Имя Фамилия">
+	</label>
 	</p>
 	<p>
+	<label>
 		Ваш e-mail:
-		<span>email@example.com</span>
+		<input type="email" name="email" placeholder="email@example.com" required>
+	</label>
 	</p>
 	<p>
+	<label>
 		Текст письма:
-		<span>В свободной форме</span>
+		<textarea name="comment" placeholder="В свободной форме"></textarea>
+	</label>
 	</p>
-	<button type="button">Оформить заказ</button>
-</div>
+	<input type="submit" value="Оформить заказ">
+</form>
+<button type="button">Закрыть форму</button>
 
 </body>
 </html>
