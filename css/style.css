@@ -1,0 +1,251 @@
+
+
+:root {
+	--basic-red:#EE3643;
+	--basic-white:#FFFFFF;
+	--basic-black:#000000;	
+	--basic-green:#63A63E;
+	--special-greenlight:#8ED78F;
+	--basic-grey:#EAEAEA;
+	--background-grey:#32425C;
+	--grey:#293449;
+	--special-grey:#3D546F;
+	--header-grey:#F3F7F9;
+	--basic-greylight:#F1F5F7;
+	--special-greylight:#C5C5C5;
+	--special-yellow:#FFBF47;
+	--special-blue:#3BBCE3;
+	--special-lilac:#DC91D8;
+	--special-yellowlight:#FFD180;
+
+	--error:#BA2732;
+	--success:#5FBB2D;
+
+}
+
+
+body {
+	min-width: 960px;
+	margin:0;
+	padding: 0;
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 23px;
+	color: var(--basic-white);
+	background-color: var(--special-greylight);
+}
+
+a {
+	text-decoration: none;
+	color: var(--basic-white);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden {
+	position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-menu {
+	background-color: var(--grey);
+	}
+
+.button-search {
+	margin-left: 20px;
+	background-color: inherit;
+	background-image: url("../img/icon-search.svg");
+	background-position: -150px 1px;
+	background-repeat: no-repeat;
+	border: none;
+	color: var(--grey);
+	padding: 0;
+}
+
+input[type="search"] {
+	background-color: inherit;
+	border: none;
+	font-size: 18px;
+	line-height: 24px;
+	margin-right: 0;
+}
+
+input[type="search"]::placeholder {
+	color: var(--basic-white);
+}
+
+
+.site-navigation {
+	list-style: none;
+}
+
+.bookmark {
+	background-image: url("../img/icon-bookmark.svg");
+	background-repeat: no-repeat;
+	padding-left: 25px; 
+}
+
+.cart {
+	background-image: url("../img/icon-cart.svg");
+	background-repeat: no-repeat;
+	padding-left: 25px; 
+
+}
+
+.order {
+	background-color: var(--basic-green);
+}
+
+.main-header {
+	background-color: var(--header-grey);
+
+}
+
+.slogan {
+	color: var(--basic-red);
+	font-style: italic;
+	font-size: 16px;
+}
+
+.telephone {
+	color: var(--basic-red);
+	border: 2px solid white;
+	background-image: url("../img/icon-phone.svg");
+	background-repeat: no-repeat;
+	padding-left: 35px; 
+}
+
+.adress {
+	color: var(--background-grey);
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.entry {
+	color: var(--basic-black);
+	background-color: var(--basic-white);
+	background-image: url("../img/icon-login.svg");
+	background-repeat: no-repeat;
+	padding-left: 26px; 
+}
+
+.registration {
+	color: var(--basic-black);
+	background-color: var(--basic-white);
+}
+
+.account {
+	background-color: var(--basic-white);
+	background-image: url("../img/icon-user.svg");
+	background-repeat: no-repeat;
+}
+
+.account-name {
+	color: var(--basic-black);
+	font-size: 21px;
+	line-height: 21px;
+	margin-left: 41px;
+	margin-right: 20px;
+}
+
+.personal-area {
+	color: var(--background-grey);
+	font-size: 16px;
+	line-height: 18px;
+}
+
+
+.button {
+	background-color: var(--basic-red);
+	border: none;
+	color: var(--basic-white);
+	text-transform: uppercase;
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+
+}
+
+.navigation {
+	background-color: var(--background-grey);
+	box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24); 
+}
+
+
+.container {
+	background-color: var(--basic-white);
+	color: var(--basic-black); 
+
+}
+
+.big-letter {
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.text {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+
+}
+
+
+.red-line {
+	background-image: url("../img/red-line.svg");
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 30px; 
+
+
+}
+
+.hidden {
+	display: block;
+}
+
+.page-footer {
+	background-color: var(--background-grey);
+
+}
+
+.information {
+	font-size: 18px;
+	line-height: 24px;
+	color: var(--header-grey);
+}
+
+.white-text {
+	line-height: 24px;
+	color: var(--basic-greylight);
+}
+
+.yellow-text {
+	line-height: 24px;
+	color: var(--special-yellowlight);
+}
+
+
+.main-footer {
+	background-color: var(--grey);
+}
+
+.copyright {
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.academy {
+	color: var(--special-yellowlight); 
+}
