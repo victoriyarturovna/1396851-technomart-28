@@ -1,5 +1,3 @@
-
-
 :root {
 	--basic-red:#EE3643;
 	--basic-white:#FFFFFF;
@@ -17,6 +15,8 @@
 	--special-blue:#3BBCE3;
 	--special-lilac:#DC91D8;
 	--special-yellowlight:#FFD180;
+	--gray-active:#161D29;
+	--gray-logo:#212A3A;
 
 	--error:#BA2732;
 	--success:#5FBB2D;
@@ -45,6 +45,10 @@ img {
 	height: auto;
 }
 
+ul {
+	list-style: none;
+}
+
 .visually-hidden {
 	position: absolute;
   width: 1px;
@@ -60,16 +64,20 @@ img {
 	background-color: var(--grey);
 	}
 
+
+
 .button-search {
 	margin-left: 20px;
 	background-color: inherit;
 	background-image: url("../img/icon-search.svg");
+	opacity: 0.3;
 	background-position: -150px 1px;
 	background-repeat: no-repeat;
 	border: none;
 	color: var(--grey);
 	padding: 0;
 }
+
 
 input[type="search"] {
 	background-color: inherit;
@@ -83,26 +91,64 @@ input[type="search"]::placeholder {
 	color: var(--basic-white);
 }
 
-
-.site-navigation {
-	list-style: none;
+.form-search {
+	background-color: var(--grey);
+}
+.form-search:focus {
+	background-color: var(--basic-white);
 }
 
-.bookmark {
-	background-image: url("../img/icon-bookmark.svg");
+
+.bookmark-link::before {
+	content: url("../img/icon-bookmark.svg");
+	opacity: 0.3;
 	background-repeat: no-repeat;
-	padding-left: 25px; 
+	margin-right: 9px;
 }
+ 
+.bookmark-link {
+
+}
+
+.cart::before {
+	content: url("../img/icon-cart.svg");
+	opacity: 0.3;
+	background-repeat: no-repeat;
+	margin-right: 9px;
+}
+
 
 .cart {
+
+}
+
+.button-search:hover,
+.bookmark-link:hover::before,
+.cart:hover::before {
+	opacity: 1;
+}
+
+.bookmark-link:active,
+.cart:active {
+	opacity: 0.3;
+	background-color: var(--gray-active);
+}
+
+
+.cart-active {
 	background-image: url("../img/icon-cart.svg");
+	background-color: var(--basic-red);
 	background-repeat: no-repeat;
-	padding-left: 25px; 
+	padding-left: 25px;
 
 }
 
 .order {
 	background-color: var(--basic-green);
+}
+
+.order:active {
+	color: rgba(255,255,255,0.5);
 }
 
 .main-header {
@@ -138,15 +184,46 @@ input[type="search"]::placeholder {
 	padding-left: 26px; 
 }
 
+
+.entry:hover {
+	color: var(--basic-red);
+	background-image: url("../img/icon-login-focus.svg");
+}
+
+.entry:active {
+	background-image: url("../img/icon-login.svg");
+	color: var(--special-greylight);
+}
+
 .registration {
 	color: var(--basic-black);
 	background-color: var(--basic-white);
 }
 
+.registration:hover,
+.personal-area:hover {
+	color: var(--basic-red);
+}
+
+.registration:active,
+.personal-area:active,
+.account-name:active {
+	color: var(--special-greylight);
+}
+
+.account::before {
+	content: url("../img/icon-user-focus.svg");
+	opacity: 0.3;
+}
+
 .account {
 	background-color: var(--basic-white);
-	background-image: url("../img/icon-user.svg");
-	background-repeat: no-repeat;
+}
+
+
+.account:hover,
+.exit:hover {
+	opacity: 1;
 }
 
 .account-name {
@@ -161,6 +238,10 @@ input[type="search"]::placeholder {
 	color: var(--background-grey);
 	font-size: 16px;
 	line-height: 18px;
+}
+
+.exit {
+	opacity: 0.3;
 }
 
 
@@ -179,7 +260,21 @@ input[type="search"]::placeholder {
 .navigation {
 	background-color: var(--background-grey);
 	box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24); 
+	padding:10px;
 }
+.navigation-item {
+	padding: 10px;
+
+}
+
+.navigation-item:hover {
+	background-color: var(--grey);
+}
+
+.navigation-item:active {
+	background-color:#1D2739;
+	color: rgba(255,255,255,0.5);
+} 
 
 
 .container {
@@ -202,7 +297,7 @@ input[type="search"]::placeholder {
 }
 
 
-.red-line {
+.delivery-list-item {
 	background-image: url("../img/red-line.svg");
 	background-repeat: no-repeat;
 	background-position: left center;
@@ -226,14 +321,25 @@ input[type="search"]::placeholder {
 	color: var(--header-grey);
 }
 
-.white-text {
+.footer-navigation {
 	line-height: 24px;
 	color: var(--basic-greylight);
 }
 
-.yellow-text {
+.footer-catalog {
 	line-height: 24px;
 	color: var(--special-yellowlight);
+}
+
+.footer-navigation:hover,
+.footer-catalog:hover {
+	text-decoration: underline;
+}
+
+.footer-navigation:active,
+.footer-catalog:active {
+	opacity: 0.5;
+	text-decoration: none;
 }
 
 
@@ -246,6 +352,27 @@ input[type="search"]::placeholder {
 	line-height: 18px;
 }
 
+.social-icon {
+	background-color: var(--gray-logo);
+	height: 44px;
+	width: 44px;
+	border-radius: 50%;
+}
+
+.social-icon:hover,
+.social-icon:active {
+	background-color: var(--basic-red);
+}
+
 .academy {
 	color: var(--special-yellowlight); 
+}
+
+.academy:hover {
+	text-decoration: underline
+}
+
+.academy:active {
+	text-decoration: none;
+	color: var(--basic-red);
 }
