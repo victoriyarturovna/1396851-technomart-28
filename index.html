@@ -52,15 +52,15 @@
 		<section>
 			<div>
 				<ul class="holder">
-					<li class="materials">
+					<li class="card-items card-materials">
 						<h3>Материалы</h3><span>Новинка</span>
 						<a href="" class="button-container">На любой вкус</a>
 					</li>
-					<li class="tools">
+					<li class="card-items card-tools">
 						<h3>Инструмент</h3>
 						<a href="" class="button-container">На все случаи</a>
 					</li>
-					<li class="equipment">
+					<li class="card-items card-equipment">
 						<h3>Техника</h3>
 						<a href="" class="button-container">Для стройки</a>
 					</li>
@@ -82,18 +82,16 @@
 				<button type="button-forward" disabled></button>
 			</p>
 		</div>
-		<div>
 			<ul class="holder">
-				<li class="discounts"> 
+				<li class="card-items card-discounts"> 
 					<h3>Скидки 50%</h3>
 					<a href="" class="button-container">На 350 товаров</a> 
 				</li>
-				<li class="delivery">
+				<li class="card-items card-delivery">
 					<h3>Доставка</h3>
 					<a href="" class="button-container">Бесплатно</a>
 				</li>
 			</ul>
-		</div>
 		</section>
 		<section>
 			<div class="popular">
@@ -105,7 +103,7 @@
 					<p>
 						<img src="img/hummer_9000.png" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
 						Перфоратор BOSCH BFG 9000
-						<span><del>32500 Р.</del></span> <span>25500 P.</span>
+						<span><del>32500 Р.</del></span> <span class="price-for-goods">25500 P.</span>
 						<a href="" class="buy">Купить</a>
 						<a href="" class="to-bookmarks">В закладки</a>
 					</p>
@@ -114,7 +112,7 @@
 					<p>
 						<img src="img/hummer_2000_3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
 						Перфоратор BOSCH BFG 3000 <span>Новинка</span>
-						<span><del>22500 Р.</del></span> <span>15500 P.</span>
+						<span><del>22500 Р.</del></span> <span class="price-for-goods">15500 P.</span>
 						<a href="" class="buy">Купить</a>
 						<a href="" class="to-bookmarks">В закладки</a>
 					</p>
@@ -123,7 +121,7 @@
 					<p>
 						<img src="img/hummer_6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
 						Перфоратор BOSCH BFG 6000
-						<span><del>30500 Р.</del></span> <span>25500 P.</span>
+						<span><del>30500 Р.</del></span> <span class="price-for-goods">25500 P.</span>
 						<a href="" class="buy">Купить</a>
 						<a href="" class="to-bookmarks">В закладки</a>
 					</p>
@@ -132,7 +130,7 @@
 					<p>
 						<img src="img/hummer_2000_3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
 						Перфоратор BOSCH BFG 2000 <span>Новинка</span>
-						<span>15500 P.</span>
+						<span class="price-for-goods">15500 P.</span>
 						<a href="" class="buy">Купить</a>
 						<a href="" class="to-bookmarks">В закладки</a>
 					</p>
@@ -164,7 +162,7 @@
 				<li><button type="button" class="switch">Гарантия</button></li>
 				<li><button type="button" class="switch">Кредит</button></li>
 			</ul>
-			<div class="text-delivery">
+			<div class="service-slide text-delivery">
 				<h2>Доставка</h2>
 				<p>
 					Мы с удовольствием доставим Ваш товар
@@ -173,7 +171,7 @@
 					поднимая его на Ваш этаж!
 				</p>
 			</div>
-			<div class="text-guarantee">
+			<div class="service-slide text-guarantee">
 				<h2>Гарантия</h2>
 				<p>
 					Если купленный у нас товар поломается или заискрит,
@@ -183,7 +181,7 @@
 					Дом уж восстановите как-нибудь сами.
 				</p>
 			</div>
-			<div class="text-credit">
+			<div class="service-slide text-credit">
 				<h2>Кредит</h2>
 				<p>
 					Залезть в долговую яму стало проще!
@@ -192,7 +190,6 @@
 				<a href="" class="button button-click">Отправить заявку</a>
 			</div>
 		</section>
-		<div>
 			<section class="container">
 				<div class="about-company">
 				<h2 class="headline">Компания &laquo;ТЕХНОМАРТ&raquo;</h2>
@@ -222,7 +219,6 @@
 				<img src="img/map.png" alt="Карта">
 				<button class="button button-click" type="button">Заблудились? Напишите нам!</button>
 			</section>
-		</div>
 	</main>
 
 	<footer class="page-footer">
@@ -278,7 +274,7 @@
 
 <div>
 	<img src="img/map_popup.png" alt="Расширенная карта">
-	<a class="button-close" href=""></a>
+	<a class="button-close " href=""><span class="visually-hidden">Закрыть</span></a>
 </div>
 
 <form action="https://echo.htmlacademy.ru/courses" method="post">
@@ -306,7 +302,7 @@
 		<button type="submit" class="button button-click">Отправить</button>
 	</div>
 </form>
-<a class="button-close" href=""></a>
+<a class="button-close" href=""><span class="visually-hidden">Закрыть</span></a>
 
 </body>
 </html>

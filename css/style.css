@@ -378,14 +378,6 @@ img {
 	list-style: none;
 }
 
-.materials {
-	background-color: var(--special-yellow);
-	background-image: url("../img/icon-1.svg");
-	background-position: 213px 31px;
-	background-repeat: no-repeat;
-	width: 300px;
-	height: 123px;
-}
 
 .button-container {
 	background-color: rgba(255,255,255,0.4);
@@ -413,43 +405,37 @@ img {
 
 }
 
-.tools {
+.card-items {
+	background-position: 213px 31px;
+	background-repeat: no-repeat;
+	width: 300px;
+	height: 123px;
+
+}
+.card-materials {
+	background-color: var(--special-yellow);
+	background-image: url("../img/icon-1.svg");
+	
+}
+
+.card-tools {
 	background-color: var(--special-blue);
 	background-image: url("../img/icon-2.svg");
-	background-position: 213px 31px;
-	background-repeat: no-repeat;
-	width: 300px;
-	height: 123px;
-
 }
 
-.equipment {
+.card-equipment {
 	background-color: var(--special-lilac);
 	background-image: url("../img/icon-3.svg");
-	background-position: 213px 31px;
-	background-repeat: no-repeat;
-	width: 300px;
-	height: 123px;
-
 }
 
-.discounts {
+.card-discounts {
 	background-color: var(--special-greenlight);
 	background-image: url("../img/icon-4.svg");
-	background-position: 213px 31px;
-	background-repeat: no-repeat;
-	width: 300px;
-	height: 123px;
-
 }
 
-.delivery {
+.card-delivery {
 	background-color: var(--yellow);
 	background-image: url("../img/icon-5.svg");
-	background-position: 213px 31px;
-	background-repeat: no-repeat;
-	width: 300px;
-	height: 123px;
 
 }
 
@@ -516,8 +502,9 @@ img {
 	background-color: var(--basic-white);
 }
 
-.goods span {
+.price-for-goods {
 	background-color: var(--basic-red);
+	color: var(--basic-white);
 }
 
 .buy {
@@ -639,43 +626,33 @@ img {
 	border:none;
 }
 
-.text-delivery {
-	background-image: url("../img/delivery.png");
+
+.service-slide {
 	background-repeat: no-repeat;
 	width: 619px;
 	height: 283px;
 	background-position: 20px 25px;
+
 }
 
-.text-delivery h2 {
+.service-slide h2 {
 	color: var(--background-grey); 
 }
 
+
+.text-delivery {
+	background-image: url("../img/delivery.png");
+}
 
 .text-guarantee {
 	background-image: url("../img/guarantee.png");
-	background-repeat: no-repeat;
-	width: 619px;
-	height: 283px;
-	background-position: 20px 25px;
 }
 
-.text-guarantee h2 {
-	color: var(--background-grey); 
-}
 
 .text-credit {
 	background-image: url("../img/credit.png");
-	background-repeat: no-repeat;
-	width: 619px;
-	height: 283px;
-	background-position: 20px 25px;
-
 }
 
-.text-credit h2 {
-	color: var(--background-grey); 
-}
 
 .breadcrumbs {
 	list-style: none;
@@ -722,27 +699,26 @@ img {
 	text-transform: uppercase;
 }
 
-.selected {
-	color: var(--basic-red);
-}
-
-.selected:hover,
-.selected:focus {
-	border-bottom: 2px solid red;
-	color: var(--basic-black);
-}
-
-.not-selected {
+.control-panel-item {
 	border-bottom: 2px dotted red;
 	opacity: 0.3;
 }
 
-.not-selected:hover,
-.not-selected:focus {
+.control-panel-item:hover,
+.control-panel-item:focus {
 	border-bottom: 2px solid red;
 	color: var(--basic-black);
 	opacity: 1;
 }
+.selected,
+.selected:hover,
+.selected:focus {
+	color: var(--basic-red);
+	opacity: 1;
+	border:none;
+}
+
+
 
 .up {
 	background-image: url("../img/icon-down-dir-hover.svg");
@@ -848,8 +824,6 @@ fieldset label {
 
 }
 
-
-
 .about-drills {
 	background-color: var(--basic-greylight);
 	color: var(--basic-black);
@@ -866,11 +840,11 @@ fieldset label {
 	line-height: 30px;
 }
 
-.button-navigation {
+.pagination {
 	list-style: none;
 }
 
-.button-list-active {
+.pagination-link-active {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
@@ -882,7 +856,7 @@ fieldset label {
 
 }
 
-.button-list {
+.pagination-link {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
@@ -895,7 +869,7 @@ fieldset label {
 
 }
 
-.button-list:active {
+.pagination-link:active {
 	border: 1px solid var(--basic-red);
 }
 
