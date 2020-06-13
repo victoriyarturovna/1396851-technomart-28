@@ -10,20 +10,22 @@
 
 <body class="page-body">
 	<header class="container-header">
-		<div class="main-menu">
-			<a class="logo">Техномарт</a>
-			<form action="https://echo.htmlacademy.ru/courses" method="get">
-				<button class="button-search" type="submit"></button>
-				<input class="search" type="text" name="search" placeholder="Поиск:">
-			</form>
-			<ul class="navigation-list">
-				<li><a class="bookmark-link" href="">Закладки:0</a></li>
-				<li><a class="cart" href="">Корзина:0</a></li>
-				<li><a class="order" href="">Оформить заказ</a></li>
-			</ul>
+		<div class="main-menu-color">
+			<div class="main-menu wrapper">
+				<a class="logo">Техномарт</a>
+				<form action="https://echo.htmlacademy.ru/courses" method="get">
+					<button class="button-search" type="submit"></button>
+					<input class="search" type="text" name="search" placeholder="Поиск:">
+				</form>
+				<ul class="order-nav-list">
+					<li><a class="bookmark-link" href="">Закладки: 0</a></li>
+					<li><a class="cart" href="">Корзина: 0</a></li>
+					<li><a class="order" href="">Оформить заказ</a></li>
+				</ul>
+			</div>
 		</div>
-		<section class="main-header">
-			<div class="main-header-information">
+		<section class="main-header ">
+			<div class="main-header-information wrapper">
 				<h1 class="visually-hidden">Главная страница магазина Техномарт</h1>
 				<p class="slogan">
 					Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта
@@ -37,21 +39,20 @@
 					<li><a class="registration" href="">Регистрация</a></li>
 				</ul>
 			</div>
-			
-		<nav class="site-navigation">
-			<a class="site-navigation-item">Главная</a>
-			<a href="" class="site-navigation-item">Компания</a>
-			<a href="catalog.html" class="site-navigation-item">Каталог</a>
-			<a href="" class="site-navigation-item">Новости</a>
-			<a href="" class="site-navigation-item">Спецпредложения</a>
-			<a href="" class="site-navigation-item">Доставка</a>
-			<a href="" class="site-navigation-item">Контакты</a>
-		</nav>
+				<nav class="site-navigation wrapper">
+					<a class="site-navigation-item">Главная</a>
+					<a href="" class="site-navigation-item">Компания</a>
+					<a href="catalog.html" class="site-navigation-item">Каталог</a>
+					<a href="" class="site-navigation-item">Новости</a>
+					<a href="" class="site-navigation-item">Спецпредложения</a>
+					<a href="" class="site-navigation-item">Доставка</a>
+					<a href="" class="site-navigation-item">Контакты</a>
+				</nav>
 		</section>
 	</header>
 
 	<main class="main-container">
-		<section class="hight-container">
+		<section class="main-page-container wrapper">
 				<ul class="holder">
 					<li class="card-items card-materials">
 						<h3>Материалы</h3><span>Новинка</span>
@@ -93,7 +94,7 @@
 				</li>
 			</ul>
 		</section>
-		<section>
+		<section class="wrapper">
 			<div class="popular">
 				<h2>Популярные товары:</h2>
 				<a href="" class="button popular-goods-button">Все популярные товары</a>
@@ -151,46 +152,48 @@
 				<li class="manufacturer"><a href=""><img src="img/metabo.png" width="204" height="69" alt="metabo"></a></li>
 			</ul>
 		</section>
-		<section class="general-information">
-			<h2>Сервисы</h2>
-			<p>
-				Хороший интернет-магазин отличается от плохого не только ценами!
-				Мы стараемся изо всех сил сделать Ваши покупки приятными.
-			</p>
-			<ul class="features">
-				<li><button type="button" class="switch switch-on">Доставка</button></li>
-				<li><button type="button" class="switch">Гарантия</button></li>
-				<li><button type="button" class="switch">Кредит</button></li>
-			</ul>
-			<div class="service-slide text-delivery">
-				<h2>Доставка</h2>
+		<div class="general-information-color">
+			<section class="general-information wrapper">
+				<h2>Сервисы</h2>
 				<p>
-					Мы с удовольствием доставим Ваш товар
-					прямо к Вашему подъезду совершенно бесплатно!
-					Ведь мы неплохо заработаем,
-					поднимая его на Ваш этаж!
+					Хороший интернет-магазин отличается от плохого не только ценами!
+					Мы стараемся изо всех сил сделать Ваши покупки приятными.
 				</p>
-			</div>
-			<div class="service-slide text-guarantee">
-				<h2>Гарантия</h2>
-				<p>
-					Если купленный у нас товар поломается или заискрит,
-					а также в случае пожара, спровоцированного его
-					возгоранием, Вы всегда можете быть уверены в нашей
-					гарантии. Мы обменяем сгоревший товар на новый.
-					Дом уж восстановите как-нибудь сами.
-				</p>
-			</div>
-			<div class="service-slide text-credit">
-				<h2>Кредит</h2>
-				<p>
-					Залезть в долговую яму стало проще!
-					Кредитные консультанты придут Вам на помощь.
-				</p>
-				<a href="" class="button">Отправить заявку</a>
-			</div>
-		</section>
-			<section class="container">
+				<ul class="features">
+					<li><button type="button" class="switch switch-on">Доставка</button></li>
+					<li><button type="button" class="switch">Гарантия</button></li>
+					<li><button type="button" class="switch">Кредит</button></li>
+				</ul>
+				<div class="service-slide text-delivery">
+					<h2>Доставка</h2>
+					<p>
+						Мы с удовольствием доставим Ваш товар
+						прямо к Вашему подъезду совершенно бесплатно!
+						Ведь мы неплохо заработаем,
+						поднимая его на Ваш этаж!
+					</p>
+				</div>
+				<div class="service-slide text-guarantee">
+					<h2>Гарантия</h2>
+					<p>
+						Если купленный у нас товар поломается или заискрит,
+						а также в случае пожара, спровоцированного его
+						возгоранием, Вы всегда можете быть уверены в нашей
+						гарантии. Мы обменяем сгоревший товар на новый.
+						Дом уж восстановите как-нибудь сами.
+					</p>
+				</div>
+				<div class="service-slide text-credit">
+					<h2>Кредит</h2>
+					<p>
+						Залезть в долговую яму стало проще!
+						Кредитные консультанты придут Вам на помощь.
+					</p>
+					<a href="" class="button order-button">Отправить заявку</a>
+				</div>
+			</section>
+		</div>
+			<section class="container-about-company wrapper">
 				<div class="about-company">
 					<h2 class="headline">Компания &laquo;ТЕХНОМАРТ&raquo;</h2>
 					<p class="desc">
@@ -222,7 +225,7 @@
 	</main>
 
 	<footer class="page-footer">
-		<div class="hight-footer">
+		<div class="footer-information wrapper">
 			<div>
 				<a class="logo logo-footer">Техномарт</a>
 				<p class="information">
@@ -231,46 +234,56 @@
 				</p>
 			</div>
 			<ul class="footer-navigation-items">
-				<li><a href="" class="footer-navigation">Компания</a></li>
-				<li><a href="" class="footer-navigation">Новости</a></li>
-				<li><a href="catalog.html" class="footer-navigation">Каталог</a></li>
-				<li><a href="" class="footer-navigation">Доставка</a></li>
-				<li><a href="" class="footer-navigation">Контакты</a></li>
-				<li><a href="" class="footer-catalog">Материалы</a></li>
-				<li><a href="" class="footer-catalog">Техника</a></li>
-				<li><a href="" class="footer-catalog">Инструмент</a></li>
-				<li><a href="" class="footer-catalog">Спецпредложения</a></li>
+				<div class="footer-navigation-container">
+					<li><a href="" class="footer-navigation">Компания</a></li>
+					<li><a href="" class="footer-navigation">Новости</a></li>
+					<li><a href="catalog.html" class="footer-navigation">Каталог</a></li>
+					<li><a href="" class="footer-navigation">Доставка</a></li>
+					<li><a href="" class="footer-navigation">Контакты</a></li>
+				</div>
+				<div class="footer-catalog-container">
+					<li><a href="" class="footer-catalog">Материалы</a></li>
+					<li><a href="" class="footer-catalog">Техника</a></li>
+					<li><a href="" class="footer-catalog">Инструмент</a></li>
+					<li><a href="" class="footer-catalog">Спецпредложения</a></li>
+				</div>
 			</ul>
 		</div>
-		<div class="main-footer">
-			<p class="copyright">
-				&copy; 2010-2019 Компания &laquo;Техномарт&raquo;<br>
-				Все права защищены
-			</p>
-			<ul class="socials">
-				<li>
-					<a href="" class="social-icon">
-						<span class="visually-hidden">Вконтакте</span>
-            <svg width="27" height="16" viewBox="0 0 128 76"><path d="M125,5.15c.89-3,0-5.15-4.23-5.15h-14a6,6,0,0,0-6.09,4S93.59,21.31,83.5,32.59c-3.26,3.26-4.74,4.3-6.52,4.3-.89,0-2.18-1-2.18-4V5.15c0-3.56-1-5.15-4-5.15h-22a3.37,3.37,0,0,0-3.56,3.22c0,3.37,5,4.15,5.56,13.64V37.48c0,4.52-.82,5.34-2.6,5.34-4.74,0-16.29-17.43-23.13-37.38C23.72,1.57,22.38,0,18.8,0H4.8C.8,0,0,1.88,0,4c0,3.71,4.75,22.1,22.1,46.42C33.67,67,50,76,64.8,76c8.9,0,10-2,10-5.45V58c0-4,.84-4.8,3.66-4.8,2.08,0,5.64,1,13.94,9C101.9,71.74,103.46,76,108.8,76h14c4,0,6-2,4.85-6s-5.8-9.64-11.81-16.4c-3.27-3.86-8.16-8-9.64-10.09-2.08-2.67-1.49-3.86,0-6.23,0,0,17-24,18.83-32.18Z" fill="#fff"/></svg>
-					</a>
-				</li>
-				<li>
-					<a href="" class="social-icon">
-            <span class="visually-hidden">Фейсбук</span>
-            <svg width="19" height="22" viewBox="0 0 10.15 21.74"><path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/></svg>
-					</a>
-				</li>
-				<li>
-					<a href="" class="social-icon">
-						<span class="visually-hidden">Инстаграм</span>
-            <svg width="20" height="20" viewBox="0 0 20 20"><path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z" fill="#fff"/></svg>
-					</a>
-				</li>
-			</ul>
-			<p class="copyright">Обратная связь:
-			<a href="" class="academy">mail@htmlacademy.ru</a></p>
-			<p class="copyright">Разработано - 
-			<a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" class="academy">htmlacademy.ru</a></p>
+		<div class="main-footer-color">
+			<div class="main-footer wrapper">
+				<p class="copyright">
+					&copy; 2010-2019 Компания &laquo;Техномарт&raquo;<br>
+					Все права защищены
+				</p>
+				<ul class="socials">
+					<li>
+						<a href="" class="social-icon">
+							<span class="visually-hidden">Вконтакте</span>
+	            <svg width="27" height="16" viewBox="0 0 128 76"><path d="M125,5.15c.89-3,0-5.15-4.23-5.15h-14a6,6,0,0,0-6.09,4S93.59,21.31,83.5,32.59c-3.26,3.26-4.74,4.3-6.52,4.3-.89,0-2.18-1-2.18-4V5.15c0-3.56-1-5.15-4-5.15h-22a3.37,3.37,0,0,0-3.56,3.22c0,3.37,5,4.15,5.56,13.64V37.48c0,4.52-.82,5.34-2.6,5.34-4.74,0-16.29-17.43-23.13-37.38C23.72,1.57,22.38,0,18.8,0H4.8C.8,0,0,1.88,0,4c0,3.71,4.75,22.1,22.1,46.42C33.67,67,50,76,64.8,76c8.9,0,10-2,10-5.45V58c0-4,.84-4.8,3.66-4.8,2.08,0,5.64,1,13.94,9C101.9,71.74,103.46,76,108.8,76h14c4,0,6-2,4.85-6s-5.8-9.64-11.81-16.4c-3.27-3.86-8.16-8-9.64-10.09-2.08-2.67-1.49-3.86,0-6.23,0,0,17-24,18.83-32.18Z" fill="#fff"/></svg>
+						</a>
+					</li>
+					<li>
+						<a href="" class="social-icon">
+	            <span class="visually-hidden">Фейсбук</span>
+	            <svg width="19" height="22" viewBox="0 0 10.15 21.74"><path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/></svg>
+						</a>
+					</li>
+					<li>
+						<a href="" class="social-icon">
+							<span class="visually-hidden">Инстаграм</span>
+	            <svg width="20" height="20" viewBox="0 0 20 20"><path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z" fill="#fff"/></svg>
+						</a>
+					</li>
+				</ul>
+				<div class="copyright-container">
+					<p class="copyright">Обратная связь:
+					<a href="" class="academy">mail@htmlacademy.ru</a></p>
+				</div>
+				<div class="copyright-container">
+					<p class="copyright">Разработано - 
+					<a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" class="academy">htmlacademy.ru</a></p>
+				</div>
+			</div>
 		</div>
 	</footer>
 
