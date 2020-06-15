@@ -12,11 +12,13 @@
 	<header class="container-header">
 		<div class="main-menu-color">
 			<div class="main-menu wrapper">
-				<a class="logo">Техномарт</a>
-				<form action="https://echo.htmlacademy.ru/courses" method="get">
-					<button class="button-search" type="submit"></button>
-					<input class="search" type="text" name="search" placeholder="Поиск:">
-				</form>
+				<div class="logo-search">
+					<a class="logo">Техномарт</a>
+					<form action="https://echo.htmlacademy.ru/courses" method="get">
+						<button class="button-search" type="submit"></button>
+						<input class="search" type="text" name="search" placeholder="Поиск:">
+					</form>
+				</div>
 				<ul class="order-nav-list">
 					<li><a class="bookmark-link" href="">Закладки: 0</a></li>
 					<li><a class="cart" href="">Корзина: 0</a></li>
@@ -55,7 +57,7 @@
 		<section class="main-page-container wrapper">
 				<ul class="holder">
 					<li class="card-items card-materials">
-						<h3>Материалы</h3><span>Новинка</span>
+						<h3>Материалы</h3><span class="new">New</span>
 						<a href="" class="button-container">На любой вкус</a>
 					</li>
 					<li class="card-items card-tools">
@@ -67,21 +69,25 @@
 						<a href="" class="button-container">Для стройки</a>
 					</li>
 				</ul>
-		<div class="slider slider-hummer-drill">
-			<h2>Перфораторы</h2>
-			<p> 
-				Настоящие мужские игрушки 
-				<a href="" class="button button-open">Открыть каталог</a>
-				<button type="button-back" disabled></button>
-				<button type="button-forward"></button>
-			</p>
-			<h2>Дрели</h2>
-			<p> 
-				Соседям на радость 
-				<a href="" class="button button-open">Открыть каталог</a>
-				<button type="button-back"></button>
-				<button type="button-forward" disabled></button>
-			</p>
+		<div class="slider-box">
+			<div class="slider slider-hummer-drill">
+				<h2>Перфораторы</h2>
+				<p> 
+					Настоящие мужские игрушки 
+				</p>
+					<a href="" class="button button-open">Открыть каталог</a>
+					<a href="" class="button-back" disabled></a>
+					<a href="" class="button-forward"></a>
+			</div>
+			<div class="slider slider-drill">
+				<h2>Дрели</h2>
+				<p> 
+					Соседям на радость 
+				</p>
+					<a href="" class="button button-open">Открыть каталог</a>
+					<a href="" class="button-back"></a>
+					<a href="" class="button-forward" disabled></a>
+			</div>
 		</div>
 			<ul class="holder-2">
 				<li class="card-items card-discounts"> 
@@ -103,37 +109,37 @@
 				<li class="goods"> 
 					<p>
 						<img src="img/hummer_9000.png" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
-						Перфоратор BOSCH BFG 9000
+						<span class="cards-text">Перфоратор BOSCH BFG 9000</span>
 						<span><del>32500 Р.</del></span> <span class="price-for-goods">25500 P.</span>
-						<a href="" class="buy">Купить</a>
-						<a href="" class="to-bookmarks">В закладки</a>
+						<a href="" class="buy visually-hidden">Купить</a>
+						<a href="" class="to-bookmarks visually-hidden">В закладки</a>
 					</p>
 				</li>
 				<li class="goods">
 					<p>
 						<img src="img/hummer_2000_3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
-						Перфоратор BOSCH BFG 3000 <span>Новинка</span>
+						<span class="cards-text">Перфоратор BOSCH BFG 3000</span><span class="new-goods">New</span>
 						<span><del>22500 Р.</del></span> <span class="price-for-goods">15500 P.</span>
-						<a href="" class="buy">Купить</a>
-						<a href="" class="to-bookmarks">В закладки</a>
+						<a href="" class="buy visually-hidden">Купить</a>
+						<a href="" class="to-bookmarks visually-hidden">В закладки</a>
 					</p>
 				</li>
 				<li class="goods"> 
 					<p>
 						<img src="img/hummer_6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-						Перфоратор BOSCH BFG 6000
+						<span class="cards-text">Перфоратор BOSCH BFG 6000</span>
 						<span><del>30500 Р.</del></span> <span class="price-for-goods">25500 P.</span>
-						<a href="" class="buy">Купить</a>
-						<a href="" class="to-bookmarks">В закладки</a>
+						<a href="" class="buy visually-hidden">Купить</a>
+						<a href="" class="to-bookmarks visually-hidden">В закладки</a>
 					</p>
 				</li>
 				<li class="goods"> 
 					<p>
 						<img src="img/hummer_2000_3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
-						Перфоратор BOSCH BFG 2000 <span>Новинка</span>
+						<span class="cards-text">Перфоратор BOSCH BFG 2000</span><span class="new-goods">New</span>
 						<span class="price-for-goods">15500 P.</span>
-						<a href="" class="buy">Купить</a>
-						<a href="" class="to-bookmarks">В закладки</a>
+						<a href="" class="buy visually-hidden">Купить</a>
+						<a href="" class="to-bookmarks visually-hidden">В закладки</a>
 					</p>
 				</li>
 			</ul>
@@ -159,37 +165,41 @@
 					Хороший интернет-магазин отличается от плохого не только ценами!
 					Мы стараемся изо всех сил сделать Ваши покупки приятными.
 				</p>
-				<ul class="features">
-					<li><button type="button" class="switch switch-on">Доставка</button></li>
-					<li><button type="button" class="switch">Гарантия</button></li>
-					<li><button type="button" class="switch">Кредит</button></li>
-				</ul>
-				<div class="service-slide text-delivery">
-					<h2>Доставка</h2>
-					<p>
-						Мы с удовольствием доставим Ваш товар
-						прямо к Вашему подъезду совершенно бесплатно!
-						Ведь мы неплохо заработаем,
-						поднимая его на Ваш этаж!
-					</p>
-				</div>
-				<div class="service-slide text-guarantee">
-					<h2>Гарантия</h2>
-					<p>
-						Если купленный у нас товар поломается или заискрит,
-						а также в случае пожара, спровоцированного его
-						возгоранием, Вы всегда можете быть уверены в нашей
-						гарантии. Мы обменяем сгоревший товар на новый.
-						Дом уж восстановите как-нибудь сами.
-					</p>
-				</div>
-				<div class="service-slide text-credit">
-					<h2>Кредит</h2>
-					<p>
-						Залезть в долговую яму стало проще!
-						Кредитные консультанты придут Вам на помощь.
-					</p>
-					<a href="" class="button order-button">Отправить заявку</a>
+				<div class="features-checkbox">
+					<div class="features-shadow">
+						<ul class="features">
+							<li><button type="button" class="switch switch-on">Доставка</button></li>
+							<li><button type="button" class="switch">Гарантия</button></li>
+							<li><button type="button" class="switch">Кредит</button></li>
+						</ul>
+					</div>
+					<div class="service-slide text-delivery">
+						<h2>Доставка</h2>
+						<p>
+							Мы с удовольствием доставим Ваш товар
+							прямо к Вашему подъезду совершенно бесплатно!
+							Ведь мы неплохо заработаем,
+							поднимая его на Ваш этаж!
+						</p>
+					</div>
+					<div class="service-slide text-guarantee visually-hidden">
+						<h2>Гарантия</h2>
+						<p>
+							Если купленный у нас товар поломается или заискрит,
+							а также в случае пожара, спровоцированного его
+							возгоранием, Вы всегда можете быть уверены в нашей
+							гарантии. Мы обменяем сгоревший товар на новый.
+							Дом уж восстановите как-нибудь сами.
+						</p>
+					</div>
+					<div class="service-slide text-credit visually-hidden	">
+						<h2>Кредит</h2>
+						<p>
+							Залезть в долговую яму стало проще!
+							Кредитные консультанты придут Вам на помощь.
+						</p>
+						<a href="" class="button order-button">Отправить заявку</a>
+					</div>
 				</div>
 			</section>
 		</div>
@@ -202,7 +212,7 @@
 						на гастарбайтерах.
 						<br>
 						<br>
-						Мы можем доставить Ваш товар в самые отдаленные точки России!
+						Мы можем доставить Ваш товар в самые отдаленные точки России!<br>
 						Техномарт работает со многими транспортными компаниями:
 					</p>
 					<ul class="delivery-list">
@@ -218,7 +228,7 @@
 						Вы можете забрать товар сами,
 						заехав в наш офис:
 					</p>
-					<a href=""><img src="img/map.png" alt="Карта" width="300" height="158"></a>
+					<img src="img/map.png" alt="Карта" width="300" height="158">
 					<button class="button write-button" type="button">Заблудились? Напишите нам!</button>
 				</div>
 			</section>
@@ -233,21 +243,21 @@
 					<a href="tel:+7(812)555-05-55" class="information">+7 (812) 555-05-55</a>
 				</p>
 			</div>
-			<ul class="footer-navigation-items">
-				<div class="footer-navigation-container">
+			<div class="footer-navigation-items">
+				<ul class="footer-navigation-container">
 					<li><a href="" class="footer-navigation">Компания</a></li>
 					<li><a href="" class="footer-navigation">Новости</a></li>
 					<li><a href="catalog.html" class="footer-navigation">Каталог</a></li>
 					<li><a href="" class="footer-navigation">Доставка</a></li>
 					<li><a href="" class="footer-navigation">Контакты</a></li>
-				</div>
-				<div class="footer-catalog-container">
+				</ul>
+				<ul class="footer-catalog-container">
 					<li><a href="" class="footer-catalog">Материалы</a></li>
 					<li><a href="" class="footer-catalog">Техника</a></li>
 					<li><a href="" class="footer-catalog">Инструмент</a></li>
 					<li><a href="" class="footer-catalog">Спецпредложения</a></li>
-				</div>
-			</ul>
+				</ul>
+			</div>
 		</div>
 		<div class="main-footer-color">
 			<div class="main-footer wrapper">
@@ -287,37 +297,39 @@
 		</div>
 	</footer>
 
-<div>
+<div class="visually-hidden">
 	<img src="img/map_popup.png" alt="Расширенная карта">
 	<a class="button-close " href=""><span class="visually-hidden">Закрыть</span></a>
 </div>
 
-<form action="https://echo.htmlacademy.ru/courses" method="post">
-	<div class="write-us">
-	<p class="write-information">
-		<label>
-			Ваше имя: 
-			<input class="area-for-information" type="text" name="username" placeholder="Имя Фамилия" required>
-		</label>
-	</p>
-	<p class="write-information">
-		<label>
-			Ваш e-mail:
-			<input class="area-for-information" type="email" name="email" placeholder="email@example.com" required>
-		</label>
-	</p>
-	<p class="write-information">
-		<label>
-			Текст письма:
-			<textarea class="area-for-information" name="comment" placeholder="В свободной форме"></textarea>
-		</label>
-	</p>
-	</div>
-	<div class="area-for-button">
-		<button type="submit" class="button">Отправить</button>
-	</div>
-</form>
-<a class="button-close" href=""><span class="visually-hidden">Закрыть</span></a>
+<div class="visually-hidden">
+	<form  action="https://echo.htmlacademy.ru/courses" method="post">
+		<div class="write-us">
+		<p class="write-information">
+			<label>
+				Ваше имя: 
+				<input class="area-for-information" type="text" name="username" placeholder="Имя Фамилия" required>
+			</label>
+		</p>
+		<p class="write-information">
+			<label>
+				Ваш e-mail:
+				<input class="area-for-information" type="email" name="email" placeholder="email@example.com" required>
+			</label>
+		</p>
+		<p class="write-information">
+			<label>
+				Текст письма:
+				<textarea class="area-for-information" name="comment" placeholder="В свободной форме"></textarea>
+			</label>
+		</p>
+		</div>
+		<div class="area-for-button">
+			<button type="submit" class="button">Отправить</button>
+		</div>
+	</form>
+	<a class="button-close" href=""><span class="visually-hidden">Закрыть</span></a>
+</div>
 
 </body>
 </html>
