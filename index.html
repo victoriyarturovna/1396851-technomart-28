@@ -14,7 +14,7 @@
 			<div class="main-menu wrapper">
 				<div class="logo-search">
 					<a class="logo">Техномарт</a>
-					<form action="https://echo.htmlacademy.ru/courses" method="get">
+					<form class="form-search" action="https://echo.htmlacademy.ru/courses" method="get">
 						<button class="button-search" type="submit"></button>
 						<input class="search" type="text" name="search" placeholder="Поиск:">
 					</form>
@@ -302,33 +302,28 @@
 	<a class="button-close " href=""><span class="visually-hidden">Закрыть</span></a>
 </div>
 
-<div class="visually-hidden">
-	<form  action="https://echo.htmlacademy.ru/courses" method="post">
-		<div class="write-us">
+<div class="write-us">
+	<form class="write-us-form"  action="https://echo.htmlacademy.ru/courses" method="post">
+		<div class="write-information-area">
 		<p class="write-information">
-			<label>
-				Ваше имя: 
-				<input class="area-for-information" type="text" name="username" placeholder="Имя Фамилия" required>
-			</label>
+			<label for="name">Ваше имя:</label>
+			<input id="name" class="area-for-information" type="text" name="username" placeholder="Имя Фамилия" required>
 		</p>
 		<p class="write-information">
-			<label>
-				Ваш e-mail:
-				<input class="area-for-information" type="email" name="email" placeholder="email@example.com" required>
-			</label>
+			<label for="email">Ваш e-mail:</label>
+			<input id="email" class="area-for-information" type="email" name="email" placeholder="email@example.com" required>
 		</p>
 		<p class="write-information">
-			<label>
-				Текст письма:
-				<textarea class="area-for-information" name="comment" placeholder="В свободной форме"></textarea>
-			</label>
+			<label for="text">Текст письма:</label>
+			<textarea class="area-for-information" name="comment" placeholder="В свободной форме"></textarea>
 		</p>
 		</div>
 		<div class="area-for-button">
-			<button type="submit" class="button">Отправить</button>
+			<button type="submit" class="button button-order">Отправить</button>
 		</div>
+		<a class="button-close" href=""><span class="visually-hidden">Закрыть</span></a>
 	</form>
-	<a class="button-close" href=""><span class="visually-hidden">Закрыть</span></a>
+	
 </div>
 
 </body>
