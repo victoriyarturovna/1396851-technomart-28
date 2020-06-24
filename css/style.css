@@ -888,47 +888,7 @@ img {
 	padding: 35px;
 	background-image: url("../img/new.svg");
 } 
-/*
-.new-goods {
-	position: absolute;
-	display: block;
-	top:8px;
-	left: 175px;
-	padding-top: 7px;
-	width: 38px;
-	height: 31px;
-	align-items: center;
-	text-align: center;
-	background-color: var(--basic-red);
-	color: var(--basic-white);
-	font-family: "Cuprum", Arial, sans-serif;
-	text-transform: uppercase;
-	font-size: 14px;
-	line-height: 18px;
-	transform: rotate(45deg);
-}
 
-.new-goods:before {
-	content:" ";
-  border: 29px solid transparent; 
-  border-bottom: 31px solid var(--basic-red); 
-  border-left: 20px var(--basic-red);
-  position: absolute;
-  right:-28px;
-  top:-29px;
-}
-
-.new-goods:after {
-	content:" ";
-  border: 29px solid transparent; 
-  border-bottom: 31px solid var(--basic-red); 
-  border-right: 20px var(--basic-red);
-  position: absolute;
-  left:-28px;
-  top:-29px;
-}
-
-*/
 .goods del {
 	position: absolute;
 	display: block;
