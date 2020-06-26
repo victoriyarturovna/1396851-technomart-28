@@ -93,7 +93,7 @@
           </div>
         </div>
     		</fieldset>
-					<p class="border-fieldset">
+					<p class="border-fieldset"></p>
 						<fieldset>
 							<legend>Производители:</legend>
 							<ul class="form-manufacturer-list">
@@ -119,8 +119,7 @@
 								</li>
 							</ul>
 						</fieldset>
-					</p>
-					<p class="border-fieldset">
+					<p class="border-fieldset"> </p>
 						<fieldset>
 							<legend>Питание:</legend>
 							<ul class="form-power-list">
@@ -134,10 +133,9 @@
 								</li>
 							</ul>
 						</fieldset>
-					</p>
 					<button type="submit" class="form-button">Показать</button>
+					</div>
 				</form>
-			</div>
 			<div class="control-panel">
 				<h2>Сортировка:</h2>
 				<ul class="control-panel-list">
@@ -220,7 +218,7 @@
 					</li>
 					<li  class="goods">
 						<img src="img/hummer_6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-						<span class="cards-text">Перфоратор BOSCH BFG 6000 </span>
+						<span class="cards-text">Перфоратор BOSCH BFG 6000</span>
 						<span><del>30500 Р.</del></span> 
 						<span class="price-for-goods">25500 P.</span>
 						<div class="container-button">
@@ -237,6 +235,7 @@
 							<a href="" class="to-bookmarks">В закладки</a>
 						</div>
 					</li>
+
 				</ul>
 				<ul class="pagination">
 					<li><a href="" class="pagination-link pagination-link-active">1</a></li>
@@ -244,7 +243,7 @@
 					<li><a href="" class="pagination-link">3</a></li>
 					<li><a href="" class="pagination-link">Следующая</a></li>
 				</ul>
-		</div>
+			</div>
 	</section>
 	<div class="about-drills-color">
 		<section class="about-drills wrapper">
@@ -309,15 +308,17 @@
 							</a>
 						</li>
 				</ul>
-				<p class="copyright">Обратная связь:
-				<a href="" class="academy">mail@htmlacademy.ru</a></p>
-				<p class="copyright">Разработано - 
-				<a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" class="academy">htmlacademy.ru</a></p>
+				<div class="copyright-container">
+					<p class="copyright">Обратная связь:
+					<a href="" class="academy">mail@htmlacademy.ru</a></p>
+					<p class="copyright">Разработано - 
+					<a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" class="academy">htmlacademy.ru</a></p>
+				</div>
 		</div>
 	</div>
 </footer>
 
-<div class="basket visually-hidden">
+<div class="basket">
 	<h2 class="visually-hidden">Корзина</h2>
 	<p class="add-to-basket">Товар добавлен в корзину!</p>
 	<div class="basket-buttons">
@@ -326,6 +327,8 @@
 	</div>
 	<a class="button-close" href=""></a>
 </div>
+
+<script src="js/basket.js"></script>
 
 </body>
 </html>
