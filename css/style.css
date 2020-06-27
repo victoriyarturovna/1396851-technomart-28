@@ -545,9 +545,8 @@ img {
 
 
 .site-navigation {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(7,1fr);
 	background-color: var(--background-grey);
 	box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24); 
 }
@@ -556,9 +555,7 @@ img {
 .site-navigation-item {
 	display: block;
 	padding-top: 16px;
-	padding-left: 40px;
 	padding-bottom: 20px;
-	padding-right: auto;
 	min-width: 122px;
 	color: var(--basic-white);
 	text-align: center;
