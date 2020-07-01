@@ -1,13 +1,17 @@
-var buyLink = document.querySelector(".buy");
+var buyLinks = document.querySelectorAll(".buy");
 var basketPopup = document.querySelector(".basket");
 var basketClose = basketPopup.querySelector(".button-close");
 var basketContinuebuy = basketPopup.querySelector(".continue");
 
 
-buyLink.addEventListener("click", function (evt) {
-	evt.preventDefault ();
-	basketPopup.classList.add("modal-show");
-});
+
+for (buyLink of buyLinks) {
+  buyLink.addEventListener("click", function (evt) {
+  	evt.preventDefault ();
+  	basketPopup.classList.add("modal-show");
+  })
+};
+
 
 basketClose.addEventListener("click", function (evt) {
   evt.preventDefault();

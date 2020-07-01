@@ -6,8 +6,19 @@ var writeLogin = writePopup.querySelector(".area-for-information-name");
 var writeEmail = writePopup.querySelector(".area-for-information-email");
 var writeComment = writePopup.querySelector(".area-for-information-comment");
 
+var mapLink = document.querySelector(".map-link");
+var mapPopup = document.querySelector(".modal-map");
+var mapClose = document.querySelector(".button-close-map");
+
+var sliderForward = document.querySelector(".button-forward");
+var sliderBack = document.querySelector(".button-back");
+var sliders = document.querySelectorAll(".slider");
+
+
 var isStorageSupport = true;
 var storage = "";
+var i = 0;
+
 
 try {
   storage = localStorage.getItem("username");
@@ -59,4 +70,39 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
+
+
+mapLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.add("modal-show");
+  });
+
+mapClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.remove("modal-show");
+  });
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (mapPopup.classList.contains("modal-show")) {
+      evt.preventDefault();
+      mapPopup.classList.remove("modal-show");
+    }
+  }
+});
+
+
+
+sliderForward.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  ++i; 
+  if (i >= sliders.lenght) {
+    sliders[i-1].classList.remove("slider-active");
+    i = 0;
+    sliders[i].classList.add("slider-active");
+  } else {
+    sliders[i-1].classList.remove("slider-active");
+    sliders[i].classList.add("slider-active");
+  } 
+});
 

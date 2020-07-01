@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>HTML Academy: Техномарт</title>
 	<link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+	</style>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,14 +21,14 @@
 					</form>
 				</div>
 				<ul class="order-nav-list">
-					<li><a class="bookmark-link bookmark-index" href="">Закладки: 0</a></li>
+					<li><a class="bookmark-link" href="">Закладки: 0</a></li>
 					<li><a class="cart" href="">Корзина: 0</a></li>
 					<li><a class="order" href="">Оформить заказ</a></li>
 				</ul>
 			</div>
 		</div>
-		<section class="main-header ">
-			<div class="main-header-information wrapper">
+		<section class="main-header wrapper">
+			<div class="main-header-information ">
 				<h1 class="visually-hidden">Главная страница магазина Техномарт</h1>
 				<p class="slogan">
 					Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта
@@ -41,7 +42,7 @@
 					<li><a class="registration" href="">Регистрация</a></li>
 				</ul>
 			</div>
-				<nav class="site-navigation wrapper">
+				<nav class="site-navigation">
 					<a class="site-navigation-item">Главная</a>
 					<a href="" class="site-navigation-item">Компания</a>
 					<a href="catalog.html" class="site-navigation-item">Каталог</a>
@@ -55,9 +56,10 @@
 
 	<main class="main-container">
 		<section class="main-page-container wrapper">
+			<h2 class="visually-hidden">Содержание</h2>
 				<ul class="holder">
 					<li class="card-items card-materials">
-						<h3>Материалы</h3><span class="new">New</span>
+						<h3>Материалы</h3><span class="new"></span>
 						<a href="" class="button-container">На любой вкус</a>
 					</li>
 					<li class="card-items card-tools">
@@ -70,13 +72,13 @@
 					</li>
 				</ul>
 		<div class="slider-box">
-			<div class="slider slider-hummer-drill">
+			<div class="slider slider-hummer-drill slider-active">
 				<h2>Перфораторы</h2>
 				<p> 
 					Настоящие мужские игрушки 
 				</p>
 					<a href="" class="button button-open">Открыть каталог</a>
-					<a class="button-back"><span class="visually-hidden">Назад</span></a>
+					<a href="" class="button-back"><span class="visually-hidden">Назад</span></a>
 					<a href="" class="button-forward"><span class="visually-hidden">Вперед</span></a>
 					<a href="" class="button-control-left button-control-active"><span class="visually-hidden">Первый слайд активен</span></a>
 					<a href="" class="button-control-right"><span class="visually-hidden">Второй слайд активен</span></a>
@@ -88,7 +90,7 @@
 				</p>
 					<a href="" class="button button-open">Открыть каталог</a>
 					<a href="" class="button-back"><span class="visually-hidden">Назад</span></a>
-					<a class="button-forward"><span class="visually-hidden">Вперед</span></a>
+					<a href ="" class="button-forward"><span class="visually-hidden">Вперед</span></a>
 					<a href="" class="button-control-left"><span class="visually-hidden">Первый слайд активен</span></a>
 					<a href="" class="button-control-right button-control-active"><span class="visually-hidden">Второй слайд активен</span></a>
 			</div>
@@ -121,7 +123,7 @@
 				</li>
 				<li class="goods">
 					<img src="img/hummer_2000_3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
-					<span class="cards-text">Перфоратор BOSCH BFG 3000</span><span class="new-goods"></span>
+					<span class="cards-text">Перфоратор BOSCH BFG 3000</span><span class="new"></span>
 					<span><del>22500 Р.</del></span> <span class="price-for-goods">15500 P.</span>
 					<div class="container-button">
 						<a href="" class="buy">Купить</a>
@@ -139,7 +141,7 @@
 				</li>
 				<li class="goods"> 
 					<img src="img/hummer_2000_3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
-					<span class="cards-text">Перфоратор BOSCH BFG 2000</span><span class="new-goods"></span>
+					<span class="cards-text">Перфоратор BOSCH BFG 2000</span><span class="new"></span>
 					<span class="price-for-goods">15500 P.</span>
 					<div class="container-button">
 						<a href="" class="buy">Купить</a>
@@ -169,7 +171,7 @@
 					Хороший интернет-магазин отличается от плохого не только ценами!
 					Мы стараемся изо всех сил сделать Ваши покупки приятными.
 				</p>
-				<div class="features-checkbox">
+				<div class="features-slider">
 					<div class="features-shadow">
 						<ul class="features">
 							<li><button type="button" class="switch switch-on">Доставка</button></li>
@@ -300,9 +302,9 @@
 	</footer>
 
 <div class="modal-map">
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1593169013198!5m2!1sru!2sru" width="943" height="442" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-	<p><img src="img/map_popup.png" width="943" height="442" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
-	<a class="button-close-map" href=""><span class="visually-hidden">Закрыть</span></a>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1593169013198!5m2!1sru!2sru" width="943" height="442" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	<p class="modal-map-img"><img src="img/map_popup.png" width="943" height="442" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
+	<a class="button-close button-close-map" href=""><span class="visually-hidden">Закрыть</span></a>
 </div>
 
 <div class="write-us">
@@ -316,7 +318,7 @@
 			<label for="email">Ваш e-mail:</label>
 			<input id="email" class="area-for-information-email" type="email" name="email" placeholder="email@example.com" required>
 		</p>
-		<p class="write-information">
+		<p class="write-information write-information-textarea">
 			<label for="text">Текст письма:</label>
 			<textarea  id="text" class="area-for-information-comment" name="comment" placeholder="В свободной форме"></textarea>
 		</p>
@@ -338,9 +340,9 @@
 	<a class="button-close" href=""></a>
 </div>
 
-<script src="js/map.js"></script>
+
+<script src="js/Popup.js"></script>
 <script src="js/basket.js"></script>
-<script src="js/login.js"></script>
 
 
 </body>
