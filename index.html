@@ -4,53 +4,6 @@
 	<meta charset="utf-8">
 	<title>HTML Academy: Техномарт</title>
 	<link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-	<style>
-		@font-face {
-			font-family: Cuprum;
-			src: url('css/fonts/Cuprum/Cuprum-Regular.ttf');
-			font-weight: normal; 
-  		font-style: normal;
-
-
-			font-family: Cuprum;
-			src: url('css/fonts/Cuprum/Cuprum-Bold.ttf');
-			font-weight: bold; 
-  		font-style: normal;
-
-
-  		font-family: Cuprum;
-			src: url('css/fonts/Cuprum/Cuprum-Italic.ttf');
-			font-weight: normal; 
-  		font-style: italic;
-
-
-  		font-family: Cuprum;
-			src: url('css/fonts/Cuprum/Cuprum-BoldItalic.ttf');
-			font-weight: bold; 
-  		font-style: italic;
-
-			font-family: PT Sans;
-			src: url('css/fonts/PTSans/PTS55F.ttf');
-			font-weight: normal; 
-  		font-style: normal;
-
-			font-family: PT Sans;
-			src: url('css/fonts/PTSans/PTS56F.ttf');
-			font-weight: normal; 
-  		font-style: italic;
-
-  		font-family: PT Sans;
-			src: url('css/fonts/PTSans/PTS75F.ttf');
-			font-weight: bold; 
-  		font-style: normal;
-
-  		font-family: PT Sans;
-			src: url('css/fonts/PTSans/PTS76F.ttf');
-			font-weight: bold; 
-  		font-style: italic;
-		}
-		
-	</style>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -126,8 +79,10 @@
 					<a href="" class="button button-open">Открыть каталог</a>
 					<a href="" class="button-back"><span class="visually-hidden">Назад</span></a>
 					<a href="" class="button-forward"><span class="visually-hidden">Вперед</span></a>
-					<a href="" class="button-control-left"><span class="visually-hidden">Первый слайд активен</span></a>
-					<a href="" class="button-control-right button-control-active"><span class="visually-hidden">Второй слайд активен</span></a>
+					<div class="button-control">
+						<a href="" class="button-control-left"><span class="visually-hidden">Первый слайд активен</span></a>
+						<a href="" class="button-control-right button-control-active"><span class="visually-hidden">Второй слайд активен</span></a>
+					</div>
 			</div>
 			<div class="slider slider-drill">
 				<h2>Дрели</h2>
@@ -137,8 +92,10 @@
 					<a href="" class="button button-open">Открыть каталог</a>
 					<a href="" class="button-back"><span class="visually-hidden">Назад</span></a>
 					<a href ="" class="button-forward"><span class="visually-hidden">Вперед</span></a>
-					<a href="" class="button-control-left button-control-active"><span class="visually-hidden">Первый слайд активен</span></a>
-					<a href="" class="button-control-right "><span class="visually-hidden">Второй слайд активен</span></a>
+					<div class="button-control">
+						<a href="" class="button-control-left button-control-active"><span class="visually-hidden">Первый слайд активен</span></a>
+						<a href="" class="button-control-right "><span class="visually-hidden">Второй слайд активен</span></a>
+					</div>
 			</div>
 		</div>
 			<ul class="holder-2">
@@ -160,8 +117,10 @@
 			<ul class="goods-list">
 				<li class="goods goods-hammer-drill"> 
 					<img src="img/hummer_9000.png" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
-					<span class="cards-text">Перфоратор BOSCH BFG 9000</span>
-					<span><del>32500 Р.</del></span> <span class="price-for-goods">25500 P.</span>
+					<p>
+						<span class="cards-text">Перфоратор BOSCH BFG 9000</span>
+						<span><del>32500 Р.</del></span> <a href="" class="price-for-goods">25500 P.</a>
+					</p>
 					<div class="container-button">
 						<a href="" class="buy">Купить</a>
 						<a href="" class="to-bookmarks">В закладки</a>
@@ -169,8 +128,10 @@
 				</li>
 				<li class="goods">
 					<img src="img/hummer_2000_3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
-					<span class="cards-text cards-text-hammer">Перфоратор BOSCH BFG 3000</span><span class="new"></span>
-					<span><del>22500 Р.</del></span> <span class="price-for-goods">15500 P.</span>
+					<p>
+						<span class="cards-text cards-text-hammer">Перфоратор BOSCH BFG 3000</span><span class="new"></span>
+						<span><del>22500 Р.</del></span> <a href="" class="price-for-goods">15500 P.</a>
+					</p>
 					<div class="container-button">
 						<a href="" class="buy">Купить</a>
 						<a href="" class="to-bookmarks">В закладки</a>
@@ -178,8 +139,10 @@
 				</li>
 				<li class="goods goods-hammer-drill-6000"> 
 					<img src="img/hummer_6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-					<span class="cards-text">Перфоратор BOSCH BFG 6000</span>
-					<span><del>30500 Р.</del></span><span class="price-for-goods">25500 P.</span>
+					<p>
+						<span class="cards-text">Перфоратор BOSCH BFG 6000</span>
+						<span><del>30500 Р.</del></span><a href="" class="price-for-goods">25500 P.</a>
+					</p>
 					<div class="container-button">
 						<a href="" class="buy">Купить</a>
 						<a href="" class="to-bookmarks">В закладки</a>
@@ -187,8 +150,10 @@
 				</li>
 				<li class="goods"> 
 					<img src="img/hummer_2000_3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
-					<span class="cards-text cards-text-hammer">Перфоратор BOSCH BFG 2000</span><span class="new"></span>
-					<span class="price-for-goods">12500 P.</span>
+					<p>
+						<span class="cards-text cards-text-hammer">Перфоратор BOSCH BFG 2000</span><span class="new"></span>
+						<a href="" class="price-for-goods">12500 P.</a>
+					</p>
 					<div class="container-button">
 						<a href="" class="buy">Купить</a>
 						<a href="" class="to-bookmarks">В закладки</a>
@@ -387,9 +352,8 @@
 </div>
 
 
-<script src="js/Popup.js"></script>
+<script src="js/script.js"></script>
 <script src="js/basket.js"></script>
-
 
 </body>
 </html>

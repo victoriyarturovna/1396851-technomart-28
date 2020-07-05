@@ -10,14 +10,14 @@ var mapLink = document.querySelector(".map-link");
 var mapPopup = document.querySelector(".modal-map");
 var mapClose = document.querySelector(".button-close-map");
 
-var sliderForward = document.querySelector(".button-forward");
-var sliderBack = document.querySelector(".button-back");
-var sliders = document.querySelectorAll(".slider");
+var slidesForward = document.querySelectorAll(".button-forward");
+var slidesBack = document.querySelectorAll(".button-back");
+var slides = document.querySelectorAll(".slider");
 
 
 var isStorageSupport = true;
 var storage = "";
-var i = 0;
+var currentSlide = 0;
 
 
 try {
@@ -92,17 +92,26 @@ window.addEventListener("keydown", function (evt) {
 });
 
 
-
-sliderForward.addEventListener("click", function(evt) {
+for (slideForward of slidesForward) {
+  slideForward.addEventListener("click", function (evt){
   evt.preventDefault();
-  ++i; 
-  if (i >= sliders.lenght) {
-    sliders[i-1].classList.remove("slider-active");
-    i = 0;
-    sliders[i].classList.add("slider-active");
-  } else {
-    sliders[i-1].classList.remove("slider-active");
-    sliders[i].classList.add("slider-active");
-  } 
-});
+  currentSlide = currentSlide + 1;
+  slides[currentSlide].classList.add("slider-active");
+  slides[currentSlide-1].classList.remove("slider-active");
+  currentSlide = 0;
+})
+};
+
+for (slideBack of slidesBack) {
+slideBack.addEventListener("click", function (evt){
+  evt.preventDefault();
+  currentSlide = 0;
+  slides[currentSlide].classList.add("slider-active");
+  slides[currentSlide+1].classList.remove("slider-active");
+})
+};
+
+
+
+
 

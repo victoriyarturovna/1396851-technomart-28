@@ -32,6 +32,53 @@
 
 }
 
+@font-face {
+	font-family: Cuprum;
+	src: url('fonts/cuprum.woff2') format('woff2'),
+			 url('fonts/cuprum.woff') format('woff');
+	font-weight: normal; 
+  font-style: normal;
+}
+
+@font-face {
+	font-family: Cuprum;
+	src: url('fonts/cuprumbold.woff2') format('woff2'),
+			 url('fonts/cuprumbold.woff') format('woff');
+	font-weight: bold; 
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Cuprum;
+	src: url('fonts/cuprumitalic.woff2') format('woff2'),
+			 url('fonts/cuprumitalic.woff') format('woff');
+	font-weight: normal; 
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Cuprum;
+	src: url('fonts/cuprumbolditalic.woff2') format('woff2'),
+			 url('fonts/cuprumbolditalic.woff') format('woff');
+	font-weight: bold; 
+  font-style: italic;
+}
+
+@font-face {
+	font-family: PT Sans;
+	src: url('fonts/ptsans.woff2') format('woff2'),
+			 url('fonts/ptsans.woff') format('woff');
+	font-weight: normal; 
+  font-style: norfontsmal;
+}
+
+@font-face {
+  font-family: PT Sans;
+	src: url('fonts/ptsansbold.woff2') format('woff2'),
+			 url('fonts/ptsansbold.woff') format('woff');
+	font-weight: bold; 
+  font-style: normal;
+}
 
 body {
 	min-width: 960px;
@@ -71,6 +118,7 @@ img {
 
 .button {
 	display: block;
+	padding: 10px 46px;
 	text-align: center;
 	align-items: center;
 	vertical-align: middle;
@@ -813,11 +861,16 @@ img {
 	opacity: 0.4;
 }
 
-.button-control-left {
+.button-control {
 	position: absolute;
+	display: flex;
 	top: 220px;
 	left: 295px;
+}
+
+.button-control-left {
 	display: block;
+	margin-right: 15px;
 	padding: 0;
 	border: 5px solid var(--basic-white);	
 	border-radius: 50%;
@@ -830,9 +883,6 @@ img {
 }
 
 .button-control-right {
-	position: absolute;
-	top: 223px;
-	left: 318px;
 	display: block;
 	padding: 0;
 	border: 5px solid var(--basic-white);
@@ -846,7 +896,8 @@ img {
 }
 
 .button-control-active {
-	top: 223px;
+	margin-top: 2px;
+	max-height: 3px;
 	border: 3px solid var(--basic-red);
 	box-shadow: 0 0 0 2px rgb(255,255,255);
 }
@@ -1627,12 +1678,18 @@ fieldset label {
 	opacity: 1;
 }
 
+
 .filter-input-checkbox + label:enabled::before {
 	opacity: 0.4;
 }
 
 .filter-input-checkbox:checked + label::before {
 	content: url("../img/checkbox-on.svg");
+}
+
+.filter-input-checkbox:focus + label {
+	opacity: 1;
+	border: 1px solid black;
 }
 
 .form-power-list {
@@ -1674,7 +1731,7 @@ fieldset label {
 	content: "";
 	position: absolute;
 	padding: 0;
-	top: 6px;
+	top: 7px;
 	left: -28px;
 	width: 9px;
 	height: 9px;
@@ -1688,6 +1745,10 @@ fieldset label {
 
 .filter-input-radio + label:enabled::before {
 	opacity: 0.4;
+}
+
+.filter-input-radio:focus + label::before {
+	border: 1px solid black;
 }
 
 .checkbox {
@@ -1856,7 +1917,7 @@ fieldset label {
 
 .button-about {
 	width: 220px;
-	padding: 13px 40px 19px 40px;
+	padding: 10px 40px 10px 40px;
 }
 
 .contacts {
@@ -1871,7 +1932,7 @@ fieldset label {
 
 .write-button {
 	margin-top: 18px;
-	padding: 13px 40px 19px 40px;
+	padding: 10px 40px 10px 40px;
 	width: 300px;
 }
 
@@ -2102,6 +2163,7 @@ fieldset label {
 	justify-content: space-around;
 	margin-left: 114px;
 	margin-right: 112px;
+
 }
 
 .basket-button {
@@ -2109,6 +2171,7 @@ fieldset label {
 	justify-content: center;
 	align-content: center;
 	width: 192px; 
+	padding: 10px 30px;
 	font-size: 14px;
 	line-height: 18px;
 }
@@ -2207,6 +2270,7 @@ fieldset label {
 
 .button-order {
 	width: 460px;
+	padding: 10px 30px;
 }
 
 .modal-map {
