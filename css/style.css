@@ -861,37 +861,24 @@ img {
 	opacity: 0.4;
 }
 
-.button-control {
+.button-controls {
 	position: absolute;
 	display: flex;
 	top: 220px;
 	left: 295px;
 }
 
-.button-control-left {
-	display: block;
+.button-control {
+	display: inline-block;
 	margin-right: 15px;
 	padding: 0;
 	border: 5px solid var(--basic-white);	
 	border-radius: 50%;
 }
 
-.button-control-left:active,
-.button-control-left:focus,
-.button-control-left:hover {
-	border-radius: 20%;
-}
-
-.button-control-right {
-	display: block;
-	padding: 0;
-	border: 5px solid var(--basic-white);
-	border-radius: 50%;
-}
-
-.button-control-right:active,
-.button-control-right:focus,
-.button-control-right:hover {
+.button-control:active,
+.button-control:focus,
+.button-control:hover {
 	border-radius: 20%;
 }
 
@@ -1207,7 +1194,9 @@ img {
 	margin-left: -10px;
 }
 
-.switch {
+.switch-delivery,
+.switch-guarantee,
+.switch-credit {
 	display: block;
 	width: 240px;
 	height: 61px;
@@ -1224,8 +1213,12 @@ img {
 	font-weight: bold;
 }
 
-.switch:hover,
-.switch:focus {
+.switch-delivery:hover,
+.switch-delivery:focus,
+.switch-guarantee:hover,
+.switch-guarantee:focus,
+.switch-credit:hover,
+.switch-credit:focus {
 	background-color: var(--grey);
 	outline: none;
 }
@@ -1264,6 +1257,7 @@ img {
 
 .text-delivery {
 	background-image: url("../img/delivery.png");
+	display: none;
 }
 
 .text-guarantee {
@@ -1275,6 +1269,10 @@ img {
 .text-credit {
 	background-image: url("../img/credit.png");
 	display: none;
+}
+
+.service-show {
+	display: block;
 }
 
 .order-button {

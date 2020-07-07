@@ -13,11 +13,20 @@ var mapClose = document.querySelector(".button-close-map");
 var slidesForward = document.querySelectorAll(".button-forward");
 var slidesBack = document.querySelectorAll(".button-back");
 var slides = document.querySelectorAll(".slider");
+var slidesControl = document.querySelectorAll(".button-control");
 
+var serviceButtonsDelivery = document.querySelector(".switch-delivery");
+var serviceButtonsGuarantee = document.querySelector(".switch-guarantee");
+var serviceButtonsCredit = document.querySelector(".switch-credit");
+var serviceDelivery = document.querySelector(".text-delivery");
+var serviceGuarantee = document.querySelector(".text-guarantee");
+var serviceCredit = document.querySelector(".text-credit");
 
 var isStorageSupport = true;
 var storage = "";
 var currentSlide = 0;
+var currentDot = 0;
+
 
 
 try {
@@ -94,24 +103,56 @@ window.addEventListener("keydown", function (evt) {
 
 for (slideForward of slidesForward) {
   slideForward.addEventListener("click", function (evt){
-  evt.preventDefault();
-  currentSlide = currentSlide + 1;
-  slides[currentSlide].classList.add("slider-active");
-  slides[currentSlide-1].classList.remove("slider-active");
-  currentSlide = 0;
-})
-};
+    evt.preventDefault();
+    currentSlide = currentSlide + 1;
+    currentDot = currentDot +1;
 
-for (slideBack of slidesBack) {
-slideBack.addEventListener("click", function (evt){
-  evt.preventDefault();
-  currentSlide = 0;
-  slides[currentSlide].classList.add("slider-active");
-  slides[currentSlide+1].classList.remove("slider-active");
+    slides[currentSlide].classList.add("slider-active");
+    slides[currentSlide-1].classList.remove("slider-active");
+    currentSlide = 0;
+
+    slidesControl[currentDot+1].classList.add("button-control-active");
+    currentDot = 0;
 })
 };
 
 
+serviceButtonsDelivery.addEventListener("click", function (evt) {
+  evt.preventDefault ();
+  serviceButtonsDelivery.classList.add("switch-on");
+  serviceDelivery.classList.add("service-show");
+  serviceButtonsGuarantee.classList.remove("switch-on");
+  serviceGuarantee.classList.remove("service-show");
+  serviceButtonsCredit.classList.remove("switch-on");
+  serviceCredit.classList.remove("service-show");
+});
+
+serviceButtonsGuarantee.addEventListener("click", function (evt) {
+  evt.preventDefault ();
+  serviceButtonsGuarantee.classList.add("switch-on");
+  serviceGuarantee.classList.add("service-show");
+  serviceButtonsDelivery.classList.remove("switch-on");
+  serviceDelivery.classList.remove("service-show");
+  serviceButtonsCredit.classList.remove("switch-on");
+  serviceCredit.classList.remove("service-show");
+});
+
+serviceButtonsCredit.addEventListener("click", function (evt) {
+  evt.preventDefault ();
+  serviceButtonsCredit.classList.add("switch-on");
+  serviceCredit.classList.add("service-show");
+  serviceButtonsDelivery.classList.remove("switch-on");
+  serviceDelivery.classList.remove("service-show");
+  serviceButtonsGuarantee.classList.remove("switch-on");
+  serviceGuarantee.classList.remove("service-show");
+});
+
+
+
+
+
+
+    
 
 
 
