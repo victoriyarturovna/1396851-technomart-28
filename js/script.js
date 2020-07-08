@@ -15,6 +15,11 @@ var slidesBack = document.querySelectorAll(".button-back");
 var slides = document.querySelectorAll(".slider");
 var slidesControl = document.querySelectorAll(".button-control");
 
+var buyLinks = document.querySelectorAll(".buy");
+var basketPopup = document.querySelector(".basket");
+var basketClose = basketPopup.querySelector(".button-close");
+var basketContinuebuy = basketPopup.querySelector(".continue");
+
 var serviceButtonsDelivery = document.querySelector(".switch-delivery");
 var serviceButtonsGuarantee = document.querySelector(".switch-guarantee");
 var serviceButtonsCredit = document.querySelector(".switch-credit");
@@ -101,6 +106,8 @@ window.addEventListener("keydown", function (evt) {
 });
 
 
+
+
 for (slideForward of slidesForward) {
   slideForward.addEventListener("click", function (evt){
     evt.preventDefault();
@@ -115,6 +122,22 @@ for (slideForward of slidesForward) {
     currentDot = 0;
 })
 };
+
+for (slideBack of slidesBack) {
+  slideBack.addEventListener("click", function (evt){
+    evt.preventDefault();
+    currentSlide = currentSlide;
+    currentDot = currentDot;
+
+    slides[currentSlide].classList.add("slider-active");
+    slides[currentSlide+1].classList.remove("slider-active");
+    currentSlide = 0;
+
+    slidesControl[currentDot|1].classList.add("button-control-active");
+    currentDot = 0;
+})
+};
+
 
 
 serviceButtonsDelivery.addEventListener("click", function (evt) {
@@ -147,7 +170,32 @@ serviceButtonsCredit.addEventListener("click", function (evt) {
   serviceGuarantee.classList.remove("service-show");
 });
 
+for (buyLink of buyLinks) {
+    buyLink.addEventListener("click", function (evt) {
+    evt.preventDefault ();
+    basketPopup.classList.add("modal-show");
+  })
+};
 
+
+basketClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  basketPopup.classList.remove("modal-show");
+});
+
+basketContinuebuy.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  basketPopup.classList.remove("modal-show");
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (basketPopup.classList.contains("modal-show")) {
+      evt.preventDefault();
+      basketPopup.classList.remove("modal-show");
+    }
+  }
+});
 
 
 
