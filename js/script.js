@@ -18,7 +18,7 @@ var slidesControl = document.querySelectorAll(".button-control");
 var buyLinks = document.querySelectorAll(".buy");
 var basketPopup = document.querySelector(".basket");
 var basketClose = basketPopup.querySelector(".button-close");
-var basketContinuebuy = basketPopup.querySelector(".continue");
+var basketContinueBuy = basketPopup.querySelector(".continue");
 
 var serviceButtonsDelivery = document.querySelector(".switch-delivery");
 var serviceButtonsGuarantee = document.querySelector(".switch-guarantee");
@@ -40,7 +40,6 @@ try {
   isStorageSupport = false;
 }
 
-
 writeLink.addEventListener("click", function (evt) {
 	evt.preventDefault ();
 	writePopup.classList.add("modal-show");
@@ -52,8 +51,8 @@ if (storage) {
   } else {
     writeLogin.focus();
   }
-
 });
+
 
 writeClose.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -85,16 +84,15 @@ window.addEventListener("keydown", function (evt) {
 });
 
 
-
 mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     mapPopup.classList.add("modal-show");
-  });
+});
 
 mapClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     mapPopup.classList.remove("modal-show");
-  });
+});
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
@@ -104,8 +102,6 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
-
-
 
 
 for (slideForward of slidesForward) {
@@ -123,6 +119,7 @@ for (slideForward of slidesForward) {
 })
 };
 
+
 for (slideBack of slidesBack) {
   slideBack.addEventListener("click", function (evt){
     evt.preventDefault();
@@ -137,7 +134,6 @@ for (slideBack of slidesBack) {
     currentDot = 0;
 })
 };
-
 
 
 serviceButtonsDelivery.addEventListener("click", function (evt) {
@@ -170,6 +166,7 @@ serviceButtonsCredit.addEventListener("click", function (evt) {
   serviceGuarantee.classList.remove("service-show");
 });
 
+
 for (buyLink of buyLinks) {
     buyLink.addEventListener("click", function (evt) {
     evt.preventDefault ();
@@ -177,13 +174,12 @@ for (buyLink of buyLinks) {
   })
 };
 
-
 basketClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   basketPopup.classList.remove("modal-show");
 });
 
-basketContinuebuy.addEventListener("click", function (evt) {
+basketContinueBuy.addEventListener("click", function (evt) {
   evt.preventDefault();
   basketPopup.classList.remove("modal-show");
 });

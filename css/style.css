@@ -26,10 +26,17 @@
 	--gray-logo:#212A3A;
 	--gray-for-back:#F1F1F1;
 	--red-active:#CA2C37;
+	--grey-active-navigation:#1D2739;
+	--green-buy-active:#518534;
+	--grey-for-scale:#d7dcde;
+	--light-grey-for-scale:#00ca74;
+	--hard-gray:#ababab;
+	--gray-for-shadow:#cfcfcf;
+	--gray-for-price:#444444;
+	--gray-for-radio:#B5B5B5;
 
 	--error:#BA2732;
 	--success:#5FBB2D;
-
 }
 
 @font-face {
@@ -57,19 +64,11 @@
 }
 
 @font-face {
-  font-family: Cuprum;
-	src: url('../fonts/cuprumbolditalic.woff2') format('woff2'),
-			 url('../fonts/cuprumbolditalic.woff') format('woff');
-	font-weight: bold; 
-  font-style: italic;
-}
-
-@font-face {
 	font-family: PT Sans;
 	src: url('../fonts/ptsans.woff2') format('woff2'),
 			 url('../fonts/ptsans.woff') format('woff');
 	font-weight: normal; 
-  font-style: norfontsmal;
+  font-style: normal;
 }
 
 @font-face {
@@ -99,7 +98,6 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-
 
 *, *::before, *::after { 
 	box-sizing: border-box; 
@@ -147,7 +145,6 @@ img {
 	margin-right: auto;
 	margin-left: auto;
 }
-
 
 .page-body {
 	display: grid;
@@ -274,7 +271,6 @@ img {
 	content: url("../img/icon-bookmark.svg");
 	position: absolute;
 	left: 21px;
-	top: 2px;
 	opacity: 0.3;
 }
 
@@ -287,6 +283,8 @@ img {
 	position: relative;
 	display: block;
 	padding-left: 44px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	width: 150px;
 	color: var(--basic-white);	
 }
@@ -616,7 +614,6 @@ img {
 	background-color: var(--error);
 }
 
-
 .site-navigation {
 	display: grid;
 	grid-template-columns: repeat(7,auto);
@@ -624,9 +621,7 @@ img {
 	box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24); 
 }
 
-
-.site-navigation-item,
-.site-navigation-item-main {
+.site-navigation-item {
 	display: block;
 	padding-top: 16px;
 	padding-bottom: 20px;
@@ -636,13 +631,17 @@ img {
 	text-align: center;
 }
 
-.site-navigation-item:hover,
-.site-navigation-item:focus {
+.site-navigation :first-child {
+	margin-left: 20px;
+}
+
+.highlight:hover,
+.highlight:focus {
 	background-color: var(--grey);
 }
 
 .site-navigation-item:active {
-	background-color: #1D2739;
+	background-color: var(--grey-active-navigation);
 	color: rgba(255,255,255,0.5);
 } 
 
@@ -667,7 +666,6 @@ img {
 	grid-row-gap: 20px;
 	padding-bottom: 59px;
 }
-
 
 .holder {
 	display: grid;
@@ -699,7 +697,7 @@ img {
 	border: none;
 	text-transform: uppercase;
 	color: var(--basic-white);
-	font-family: "Cuprum";
+	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: normal;
@@ -719,7 +717,6 @@ img {
 
 .button-click:active {
 	background-color: var(--error);
-
 }
 
 .card-items {
@@ -786,7 +783,6 @@ img {
 	padding-bottom: 27px;
 }
 
-
 .slider-hummer-drill {
 	display: none;
 	background-image: url("../img/hummer-drill.jpg");
@@ -825,7 +821,6 @@ img {
 	padding:11px 46px 9px 46px;
 	max-width: 192px;
 }
-
 
 .button-back {
 	position: absolute;
@@ -900,7 +895,6 @@ img {
 	background-image: url("../img/new.svg");
 }
 
-
 .popular {
 	display: flex;
 	justify-content: space-between;
@@ -940,7 +934,7 @@ img {
 	border: 1px solid var(--basic-grey);
 	color: var(--basic-black);
 	width: 220px;
-	height: 318px;
+	min-height: 318px;
 	padding-top: 29px;
 	padding-bottom: 30px;
 	padding-left: 18px;
@@ -1044,7 +1038,6 @@ img {
 	font-weight: normal;
 }
 
-
 .buy {
 	display: block;
 	padding: 10px 12px 10px 25px;
@@ -1055,7 +1048,7 @@ img {
 	background-image: url("../img/icon-cart.svg");
 	background-repeat: no-repeat;
 	background-position: 20px 10px;
-	box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+	box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.24);
 	border: none;
 	border-radius: 2px;
 	color: var(--basic-white);
@@ -1070,9 +1063,8 @@ img {
 }
 
 .buy:active {
-	background-color: #518534;
+	background-color: var(--green-buy-active);
 }
-
 
 .to-bookmarks {
 	display: block;
@@ -1115,7 +1107,6 @@ img {
 	list-style: none;
 }
 
-
 .manufacturer {
 	display: flex;
 	width: 220px;
@@ -1125,7 +1116,6 @@ img {
 	background-color: var(--basic-white);
 	border: 1px solid var(--basic-grey);
 }
-
 
 .manufacturer:hover {
 	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
@@ -1206,7 +1196,7 @@ img {
 	padding-bottom: 8px;
 	background-color: var(--background-grey);
 	border: none;
-	box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+	box-shadow: 0px 1px 0px var(--grey), inset 0px 1px 0px #405069;
 	color: var(--basic-white);
 	font-family: "Cuprum", Arial, sans-serif;
 	text-align: left;
@@ -1238,7 +1228,6 @@ img {
 	outline: none;
 }
 
-
 .service-slide {
 	padding-right: 306px;
 	padding-top: 48px;
@@ -1267,7 +1256,6 @@ img {
 	display: none;
 }
 
-
 .text-credit {
 	background-image: url("../img/credit.png");
 	display: none;
@@ -1287,7 +1275,6 @@ img {
 	padding-right: 40px;
 	border-radius: 4px;
 }
-
 
 .breadcrumbs {
 	display: flex;
@@ -1371,7 +1358,6 @@ img {
 	column-gap: 20px;
 }
 
-
 .goods-list-catalog {
 	display: grid;
 	grid-template-columns: 220px 220px 220px;
@@ -1398,7 +1384,6 @@ img {
 	color: var(--basic-black); 
 	text-transform: uppercase;
 }
-
 
 .control-panel {
 	display: flex;
@@ -1427,7 +1412,6 @@ img {
 	color: var(--basic-black); 
 	text-transform: uppercase;
 	font-weight: normal;
-
 }
 
 .control-panel-list {
@@ -1450,7 +1434,6 @@ img {
 	opacity: 0.3;
 	color: black;
 }
-
 
 .control-panel-item:hover,
 .control-panel-item:focus {
@@ -1476,8 +1459,6 @@ img {
 	background-repeat: no-repeat;
 	opacity: 0.3;
 }
-
-
 
 .down {
 	display: block;
@@ -1540,13 +1521,14 @@ img {
 
 .range-controls .scale {
   height: 2px;
-  background: #d7dcde;
+  background: var(--grey-for-scale);
 }
 
 .range-controls .bar {
   width: 70%;
   height: 2px;
-  background: #00ca74;
+  margin-left: 9%;
+  background: var(--light-grey-for-scale);
 }
 
 .range-controls .toggle {
@@ -1557,9 +1539,9 @@ img {
   height: 4px;
   padding: 2px;
   border: 8px solid var(--basic-white);
-  background-color: #ababab;
+  background-color: var(--hard-gray);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 var(--gray-for-shadow);
   cursor: pointer;
 }
 
@@ -1568,7 +1550,7 @@ img {
 }
 
 .range-controls .toggle-max {
-  left: 160px;
+  left: 150px;
 }
 
 .price-controls {
@@ -1606,7 +1588,7 @@ img {
 	left: 105px;
 	height: 1px;
 	width: 9px;
-	background-color: #444444;
+	background-color: var(--gray-for-price);
 }
 
 .border-fieldset {
@@ -1674,7 +1656,6 @@ fieldset label {
 	opacity: 1;
 }
 
-
 .filter-input-checkbox + label:enabled::before {
 	opacity: 0.4;
 }
@@ -1735,7 +1716,7 @@ fieldset label {
 }
 
 .filter-input-radio + label:hover::before {
-	border: 4px solid #B5B5B5;
+	border: 4px solid var(--gray-for-radio);
 }
 
 .filter-input-radio + label:enabled::before {
@@ -1774,7 +1755,6 @@ fieldset label {
 .about-drills-color {
 	background-color: var(--basic-greylight);
 }
-
 
 .about-drills {
 	padding-top: 82px;
@@ -1852,6 +1832,7 @@ fieldset label {
 	justify-content: space-between;
 	min-width: 940px;
 	margin-top: 62px;
+	margin-bottom: 10px;
 	background-color: var(--basic-white);
 	color: var(--basic-black);
 }
@@ -1926,7 +1907,7 @@ fieldset label {
 }
 
 .write-button {
-	margin-top: 18px;
+	margin-top: 21px;
 	padding: 10px 40px 10px 40px;
 	width: 300px;
 }
@@ -1989,7 +1970,6 @@ fieldset label {
 	list-style: none;
 }
 
-
 .footer-navigation,
 .footer-navigation-catalog {
 	display: block;
@@ -2018,7 +1998,6 @@ fieldset label {
 	text-decoration: underline;
 }
 
-
 .footer-catalog:active {
 	opacity: 0.5;
 	text-decoration: none;
@@ -2043,7 +2022,6 @@ fieldset label {
 	margin-right: 12px;
 }
 
-
 .copyright {
 	margin: 0;
 	padding: 0;
@@ -2062,7 +2040,6 @@ fieldset label {
 	list-style: none;
 }
 
-
 .social-icon {
 	display: flex;
 	height: 44px;
@@ -2071,7 +2048,6 @@ fieldset label {
 	background-color: var(--gray-logo);
 	border-radius: 50%;
 }
-
 
 .social-icon:hover,
 .social-icon:focus,
@@ -2095,7 +2071,6 @@ fieldset label {
 	text-decoration: none;
 	color: var(--basic-red);
 }
-
 
 .basket {
 	position: fixed;
@@ -2159,7 +2134,6 @@ fieldset label {
 	justify-content: space-around;
 	margin-left: 114px;
 	margin-right: 112px;
-
 }
 
 .basket-button {
@@ -2182,7 +2156,7 @@ fieldset label {
 .continue:focus,
 .continue:active {
 	background-color: var(--basic-white);
-	border: 1px solid var(--special-greylight);
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .write-us {
@@ -2230,6 +2204,7 @@ fieldset label {
 .write-information input {
 	width: 220px;
 	height: 38px;
+	padding-left: 12px;
 }
 
 .write-information-textarea  {
@@ -2255,7 +2230,6 @@ fieldset label {
 .area-for-information::placeholder {
 	padding-left: 12px;
 }
-
 
 .area-for-button {
 	padding-top: 37px;
@@ -2314,7 +2288,6 @@ fieldset label {
   border: none;
 }
 
-
 .modal-show {
   display: block;
   animation: bounce 0.6s;
@@ -2328,11 +2301,9 @@ fieldset label {
   0% {
     top: -800px;
   }
-
   90% {
     top: 500px;
   }
-
 }
 
 @keyframes shake {
