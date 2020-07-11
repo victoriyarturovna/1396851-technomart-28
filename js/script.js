@@ -53,7 +53,6 @@ if (storage) {
   }
 });
 
-
 writeClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   writePopup.classList.remove("modal-show");
@@ -82,7 +81,6 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
-
 
 mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -118,7 +116,6 @@ for (slideForward of slidesForward) {
     currentDot = 0;
 })
 };
-
 
 for (slideBack of slidesBack) {
   slideBack.addEventListener("click", function (evt){

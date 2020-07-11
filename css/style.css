@@ -34,6 +34,12 @@
 	--gray-for-shadow:#cfcfcf;
 	--gray-for-price:#444444;
 	--gray-for-radio:#B5B5B5;
+	--red-shadow:#BA2732;
+
+	--white:250,250,250;
+	--black:0,0,0;
+	--button-hover:197,197,197;
+	--button-active:169,169,169;
 
 	--error:#BA2732;
 	--success:#5FBB2D;
@@ -182,7 +188,7 @@ img {
 	text-align: center;
 	padding-top: 11px;
 	background-color: var(--basic-red);
-	box-shadow: 0px 5px 0px rgba(186, 39, 50, 0.9);
+	box-shadow: 0px 5px 0px var(--red-shadow);
 	color: var(--basic-white);
 	font-size: 24px;
 	text-transform: uppercase;
@@ -370,7 +376,7 @@ img {
 }
 
 .order:active {
-	color: rgba(255,255,255,0.5);
+	color: rgba(var(--white),0.5);
 	outline: none;
 }
 
@@ -618,7 +624,7 @@ img {
 	display: grid;
 	grid-template-columns: repeat(7,auto);
 	background-color: var(--background-grey);
-	box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24); 
+	box-shadow: inset 0px -5px 0px rgba(var(--black), 0.24); 
 }
 
 .site-navigation-item {
@@ -642,7 +648,7 @@ img {
 
 .site-navigation-item:active {
 	background-color: var(--grey-active-navigation);
-	color: rgba(255,255,255,0.5);
+	color: rgba(var(--white),0.5);
 } 
 
 .main-container {
@@ -693,7 +699,7 @@ img {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	width: 135px;
-	background-color: rgba(255,255,255,0.3);
+	background-color: rgba(var(--white),0.3);
 	border: none;
 	text-transform: uppercase;
 	color: var(--basic-white);
@@ -707,11 +713,11 @@ img {
 
 .button-container:hover,
 .button-container:focus {
-	background-color: rgba(197, 197, 197, 0.3);;
+	background-color: rgba(var(--button-hover),0.3);
 }
 
 .button-container:active {
-	background-color: rgba(169, 169, 169, 0.3);
+	background-color: rgba(var(--button-active),0.3);
 	border: none;
 }
 
@@ -883,7 +889,7 @@ img {
 	margin-top: 2px;
 	max-height: 3px;
 	border: 3px solid var(--basic-red);
-	box-shadow: 0 0 0 2px rgb(255,255,255);
+	box-shadow: 0 0 0 2px rgb(var(--white));
 }
 
 .new {
@@ -960,7 +966,7 @@ img {
 }
 
 .goods:hover {
-	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 4px 20px rgba(var(--black), 0.15);
 }
 
 .goods:hover > img {
@@ -1048,7 +1054,7 @@ img {
 	background-image: url("../img/icon-cart.svg");
 	background-repeat: no-repeat;
 	background-position: 20px 10px;
-	box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.24);
+	box-shadow: inset 0px -3px 0px rgba(var(--black), 0.24);
 	border: none;
 	border-radius: 2px;
 	color: var(--basic-white);
@@ -1118,12 +1124,12 @@ img {
 }
 
 .manufacturer:hover {
-	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 4px 20px rgba(var(--black), 0.15);
 }
 
 .manufacturer:active {
 	opacity: 0.5;
-	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 4px 20px rgba(var(--black), 0.15);
 }
 
 .manufacturer-top {
@@ -1592,7 +1598,7 @@ img {
 }
 
 .border-fieldset {
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-top: 1px solid rgba(var(--black), 0.1);
 	margin-top: 23px;
 }
 
@@ -2082,7 +2088,7 @@ fieldset label {
 	width: 620px;
 	height: 283px;
 	background-color: var(--gray-for-back);
-	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 4px 20px rgba(var(--black), 0.15);
 	border-top: 7px solid var(--basic-red);
 }
 
@@ -2156,7 +2162,7 @@ fieldset label {
 .continue:focus,
 .continue:active {
 	background-color: var(--basic-white);
-	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 4px 20px rgba(var(--black), 0.15);
 }
 
 .write-us {
@@ -2168,7 +2174,7 @@ fieldset label {
 	transform: translate(-50%,-50%);
 	width: 620px;
 	background-color: var(--basic-white);
-	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 4px 20px rgba(var(--black), 0.15);
 	border-top: 7px solid var(--basic-red);
 }
 
@@ -2252,7 +2258,7 @@ fieldset label {
 	width: 943px;
 	height: 449px;
 	transform: translate(-50%,-50%);
-	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 4px 20px rgba(var(--black), 0.15);
 	border-top: 7px solid var(--basic-red);
 }
 
