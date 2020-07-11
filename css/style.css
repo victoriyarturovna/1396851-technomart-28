@@ -2222,13 +2222,15 @@ fieldset label {
 .area-for-information-comment {
 	background-color: var(--basic-white);
 	border: 2px solid var(--special-greylight);
+	border-radius: 2px;
 	color: var(--gray-for-del);
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 }
 
-.area-for-information::placeholder {
+.area-for-information::placeholder,
+.area-for-information-comment::placeholder {
 	padding-left: 12px;
 }
 
