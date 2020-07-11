@@ -50,7 +50,7 @@
 	src: url('../fonts/cuprum.woff2') format('woff2'),
 			 url('../fonts/cuprum.woff') format('woff');
 	font-weight: normal; 
-  font-style: normal;
+	font-style: normal;
 }
 
 @font-face {
@@ -58,7 +58,7 @@
 	src: url('../fonts/cuprumbold.woff2') format('woff2'),
 			 url('../fonts/cuprumbold.woff') format('woff');
 	font-weight: bold; 
-  font-style: normal;
+	font-style: normal;
 }
 
 @font-face {
@@ -66,7 +66,7 @@
 	src: url('../fonts/cuprumitalic.woff2') format('woff2'),
 			 url('../fonts/cuprumitalic.woff') format('woff');
 	font-weight: normal; 
-  font-style: italic;
+	font-style: italic;
 }
 
 @font-face {
@@ -74,7 +74,7 @@
 	src: url('../fonts/ptsans.woff2') format('woff2'),
 			 url('../fonts/ptsans.woff') format('woff');
 	font-weight: normal; 
-  font-style: normal;
+	font-style: normal;
 }
 
 @font-face {
@@ -82,7 +82,7 @@
 	src: url('../fonts/ptsansbold.woff2') format('woff2'),
 			 url('../fonts/ptsansbold.woff') format('woff');
 	font-weight: bold; 
-  font-style: normal;
+	font-style: normal;
 }
 
 body {
@@ -111,13 +111,13 @@ img {
 
 .visually-hidden {
 	position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 .button {
@@ -155,8 +155,8 @@ img {
 .page-body {
 	display: grid;
 	grid-template-rows: min-content 1fr min-content;
-  align-content: start;
-  min-height: 100%;
+	align-content: start;
+	min-height: 100%;
 }
 
 .container-header {
@@ -205,7 +205,6 @@ img {
 	width: 260px;
 }
 
-
 .button-search {
 	position: absolute;
 	top: 11px;
@@ -228,7 +227,6 @@ img {
 	opacity: 1;
 	outline: none;
 }
-
 
 .search {
 	width: 273px;
@@ -272,7 +270,6 @@ img {
 	list-style: none;
 }
 
-
 .bookmark-link::before {
 	content: url("../img/icon-bookmark.svg");
 	position: absolute;
@@ -301,7 +298,6 @@ img {
 	outline: none;
 }
 
-
 .cart::before {
 	content: url("../img/icon-cart.svg");
 	position: absolute;
@@ -320,7 +316,6 @@ img {
 	width: 150px;
 	color: var(--basic-white);
 }
-
 
 .cart:hover::before,
 .cart:focus::before {
@@ -1029,9 +1024,9 @@ img {
 	content:" ";
 	position: absolute;
 	right:-39px;
-  top: 0px;
-  border: 19px solid transparent;	
-  border-left: 20px solid var(--basic-red);
+	top: 0px;
+	border: 19px solid transparent;	
+	border-left: 20px solid var(--basic-red);
 }
 
 .container-button {
@@ -1492,95 +1487,95 @@ img {
 }
 
 .filter-item {
-  margin: 0;
-  margin-top: -10px;
-  padding: 0;
-  width: 220px;
-  border: none;
+	margin: 0;
+	margin-top: -10px;
+	padding: 0;
+	width: 220px;
+	border: none;
 }
 
 .range-filter {
-  width: 220px;
-  margin-top: 1px;
+	width: 220px;
+	margin-top: 1px;
 }
 
 .filter-item legend {
 	display: block;
 	margin-bottom: 11px;
-  font-size: 18px;
-  line-height: 24px;
-  text-transform: uppercase;
-  font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 
 .range-controls {
-  position: relative;
-  height: 41px;
-  margin-bottom: 15px;
-  padding-top: 39px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 39px;
-  background-color: var(--gray-for-control);
-  border-radius: 5px;
+	position: relative;
+	height: 41px;
+	margin-bottom: 15px;
+	padding-top: 39px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 39px;
+	background-color: var(--gray-for-control);
+	border-radius: 5px;
 }
 
 .range-controls .scale {
-  height: 2px;
-  background: var(--grey-for-scale);
+	height: 2px;
+	background: var(--grey-for-scale);
 }
 
 .range-controls .bar {
-  width: 70%;
-  height: 2px;
-  margin-left: 9%;
-  background: var(--light-grey-for-scale);
+	width: 70%;
+	height: 2px;
+	margin-left: 9%;
+	background: var(--light-grey-for-scale);
 }
 
 .range-controls .toggle {
-  position: absolute;
-  top: 31px;
-  left: 0;
-  width: 4px;
-  height: 4px;
-  padding: 2px;
-  border: 8px solid var(--basic-white);
-  background-color: var(--hard-gray);
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 var(--gray-for-shadow);
-  cursor: pointer;
+	position: absolute;
+	top: 31px;
+	left: 0;
+	width: 4px;
+	height: 4px;
+	padding: 2px;
+	border: 8px solid var(--basic-white);
+	background-color: var(--hard-gray);
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 var(--gray-for-shadow);
+	cursor: pointer;
 }
 
 .range-controls .toggle-min {
-  left: 18px;
+	left: 18px;
 }
 
 .range-controls .toggle-max {
-  left: 150px;
+	left: 150px;
 }
 
 .price-controls {
-  display: flex;
-  justify-content: space-between;
-  margin-top: -5px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: -5px;
 }
 
 .price-controls label {
-  text-transform: uppercase;
-  font-size: 17px;
-  line-height: 18px;
+	text-transform: uppercase;
+	font-size: 17px;
+	line-height: 18px;
 }
 
 .price-controls input {
-  width: 95px;
-  padding: 10px;
-  text-align: center;
-  color: var(--basic-black);
-  border: none;
-  border-radius: 5px;
-  background-color: var(--gray-for-control);
-  font-family: inherit;
-  font-size: inherit;
+	width: 95px;
+	padding: 10px;
+	text-align: center;
+	color: var(--basic-black);
+	border: none;
+	border-radius: 5px;
+	background-color: var(--gray-for-control);
+	font-family: inherit;
+	font-size: inherit;
 }
 
 .min-price {
@@ -1643,9 +1638,9 @@ fieldset label {
 
 .form-manufacturer-item label {
 	position: relative;
-  display: block;
-  cursor: pointer;
-  user-select: none;
+	display: block;
+	cursor: pointer;
+	user-select: none;
 }
 
 .filter-input-checkbox + label::before {
@@ -1693,9 +1688,9 @@ fieldset label {
 
 .form-power-item label {
 	position: relative;
-  display: block;
-  cursor: pointer;
-  user-select: none;
+	display: block;
+	cursor: pointer;
+	user-select: none;
 }
 
 .filter-input-radio + label::before {
@@ -2276,9 +2271,9 @@ fieldset label {
 
 .modal-map-img {
 	position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+	top: 0;
+	left: 0;
+	z-index: 1;
 	margin: 0;
 	padding: 0;
 }
@@ -2289,47 +2284,47 @@ fieldset label {
 }
 
 .modal-map iframe {
-  position: relative;
-  z-index: 2;
-  border: none;
+	position: relative;
+	z-index: 2;
+	border: none;
 }
 
 .modal-show {
-  display: block;
-  animation: bounce 0.6s;
+	display: block;
+	animation: bounce 0.6s;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+	animation: shake 0.6s;
 }
 
 @keyframes bounce {
-  0% {
-    top: -800px;
-  }
-  90% {
-    top: 500px;
-  }
+	0% {
+		top: -800px;
+	}
+	90% {
+		top: 500px;
+	}
 }
 
 @keyframes shake {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
+	0%,
+	100% {
+		transform: translateX(0);
+	}
 
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translateX(-100px);
-  }
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translateX(-100px);
+	}
 
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translateX(100px);
-  }
- }
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translateX(100px);
+	}
+}
